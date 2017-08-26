@@ -264,7 +264,7 @@
         <!--Title-->
         <scene sceneID="WeB-2O-SfW">
             <objects>
-                <tableViewController id="MCf-VN-ma0" sceneMemberID="viewController">
+                <tableViewController id="MCf-VN-ma0" customClass="MeusCartoesTableViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a85-HV-uaJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,6 +285,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="Faa-vU-YXd"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="MeuCartaoSegue" id="FYT-Ii-AAc"/>
                     </connections>
@@ -406,6 +408,8 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -431,7 +435,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lha-HT-Yur">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lha-HT-Yur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -452,7 +456,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tEO-Np-oLS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tEO-Np-oLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -471,8 +475,6 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVQ-SA-dOf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Configurações" image="first" id="PyM-AL-BPV"/>
                     <toolbarItems/>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGx-dP-Phd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -494,7 +496,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rUP-92-Def">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rUP-92-Def">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -515,7 +517,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mrt-bV-Q8m">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mrt-bV-Q8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
