@@ -1,0 +1,6 @@
+framework module Pods_Agillitas_ExampleUITests {
+  umbrella header "Pods-Agillitas-ExampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
