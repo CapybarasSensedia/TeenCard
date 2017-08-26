@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="igK-LL-pcI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="igK-LL-pcI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Montserrat-Regular.otf">
-            <string>Montserrat-Regular</string>
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
         </array>
     </customFonts>
     <scenes>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="-2" y="1530"/>
         </scene>
-        <!--Configuracoes View Controller-->
+        <!--Minha Conta View Controller-->
         <scene sceneID="dCE-Lf-PH4">
             <objects>
-                <viewController id="uwM-Ri-CCW" customClass="ConfiguracoesViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uwM-Ri-CCW" customClass="MinhaContaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2do-Tc-3pv"/>
                         <viewControllerLayoutGuide type="bottom" id="HO9-kl-FDX"/>
@@ -147,30 +147,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-oE-7v3" userLabel="Container">
-                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-9N-CyI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-0j-v2V" customClass="ProfilePicture" customModule="TeenCardProject" customModuleProvider="target">
-                                        <rect key="frame" x="113" y="30" width="150" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="YG0-FC-WCO"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="DKa-9N-CyI" firstAttribute="centerY" secondItem="qvX-0j-v2V" secondAttribute="centerY" id="Jy0-GB-Mht"/>
-                                    <constraint firstItem="qvX-0j-v2V" firstAttribute="top" secondItem="pyd-oE-7v3" secondAttribute="top" constant="30" id="KQO-P2-C26"/>
-                                    <constraint firstItem="DKa-9N-CyI" firstAttribute="centerX" secondItem="qvX-0j-v2V" secondAttribute="centerX" id="TtZ-4U-tV3"/>
-                                    <constraint firstItem="DKa-9N-CyI" firstAttribute="top" secondItem="pyd-oE-7v3" secondAttribute="top" id="cmu-qO-7gz"/>
-                                    <constraint firstItem="DKa-9N-CyI" firstAttribute="leading" secondItem="pyd-oE-7v3" secondAttribute="leading" id="cyD-Vz-wLL"/>
-                                    <constraint firstAttribute="bottom" secondItem="DKa-9N-CyI" secondAttribute="bottom" id="jrA-Z8-Bb9"/>
-                                    <constraint firstAttribute="trailing" secondItem="DKa-9N-CyI" secondAttribute="trailing" id="n71-NE-WuT"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome Sobrenome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laA-yC-aOD">
                                 <rect key="frame" x="16" y="271" width="343" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -204,14 +180,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-oE-7v3" userLabel="Container">
+                                <rect key="frame" x="0.0" y="65" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-9N-CyI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-0j-v2V" customClass="ProfilePicture" customModule="TeenCardProject" customModuleProvider="target">
+                                        <rect key="frame" x="112" y="25" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="pyd-oE-7v3" firstAttribute="top" secondItem="2do-Tc-3pv" secondAttribute="bottom" id="1AW-NX-R3E"/>
-                            <constraint firstItem="HO9-kl-FDX" firstAttribute="top" secondItem="pyd-oE-7v3" secondAttribute="bottom" constant="354" id="6b9-aK-AsD"/>
-                            <constraint firstItem="pyd-oE-7v3" firstAttribute="leading" secondItem="n4f-7s-iSC" secondAttribute="leading" id="Lsc-lZ-uBA"/>
-                            <constraint firstAttribute="trailing" secondItem="pyd-oE-7v3" secondAttribute="trailing" id="w72-DV-5yw"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1HT-Km-ebd"/>
                 </viewController>
@@ -219,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="741.60000000000002" y="1529.6851574212894"/>
         </scene>
-        <!--Extrato View Controller-->
+        <!--Configuracoes View Controller-->
         <scene sceneID="pIp-1O-cjO">
             <objects>
-                <viewController id="F1Z-ef-McA" customClass="ExtratoViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F1Z-ef-McA" customClass="ConfiguracoesViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="un1-ZB-SHv"/>
                         <viewControllerLayoutGuide type="bottom" id="Tfb-wM-VfJ"/>
@@ -304,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwt-Rx-ZMi">
-                                <rect key="frame" x="166.5" y="481" width="42" height="30"/>
+                                <rect key="frame" x="75" y="481" width="225" height="30"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
                                     <action selector="EntrarTouchUpInside:" destination="igK-LL-pcI" eventType="touchUpInside" id="LkD-1m-EDy"/>
