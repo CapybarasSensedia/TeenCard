@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  TeenCardProject
 //
 //  Created by Marcelo Martimiano Junior on 26/08/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ExtratoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

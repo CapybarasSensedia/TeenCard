@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  TeenCardProject
 //
 //  Created by Marcelo Martimiano Junior on 26/08/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class LinhaDoTempoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
