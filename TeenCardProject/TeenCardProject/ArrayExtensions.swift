@@ -6,14 +6,6 @@
 //  Copyright © 2017 Marcelo Martimiano Junior. All rights reserved.
 //
 
-//
-//  ArrayExtensions.swift
-//  TimingTrip
-//
-//  Created by Lucas Mendonça on 12/15/15.
-//  Copyright © 2015 TimingTripTeam. All rights reserved.
-//
-
 import Foundation
 
 /** This class extends the array type to include other useful functions it still lacks
@@ -23,7 +15,7 @@ extension Array {
     /** This appends all the objects from an array into another one.
      Usage: arrayA.appendAll(arrayB)
      */
-    mutating func appendAll(_ array: Array<Element>) {
+    mutating func appendAll(array: Array<Element>) {
         for element in array {
             self.append(element)
         }
@@ -33,7 +25,7 @@ extension Array {
      without having to necessarily pass the object's index.
      Usage: array.removeObject(object)
      */
-    mutating func removeObject<U: Equatable>(_ object: U) {
+    mutating func removeObject<U: Equatable>(object: U) {
         var index: Int = -1
         for (idx, objectToCompare) in self.enumerated() {
             if let to = objectToCompare as? U {
