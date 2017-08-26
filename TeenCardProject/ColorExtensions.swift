@@ -38,28 +38,24 @@ extension UIColor {
     /** This returns Agillitas's colors
      */
     
-    class func ag_darkBlue()->UIColor{
-        return UIColor(hexString: "#1A2B5C")!
+    class func mainOrange()->UIColor{
+        return UIColor(r:255, g:98, b:0)
     }
     
-    class func ag_mediumBlue()->UIColor{
-        return UIColor(hexString: "#2B479E")!
+    class func secondaryOrange()->UIColor{
+        return UIColor(r:245, g:105, b:84)
     }
     
-    class func ag_lightBlue()->UIColor{
-        return UIColor(hexString: "#348DCC")!
+    class func lightGray()->UIColor{
+        return UIColor(r:113, g:113, b:113)
     }
     
-    class func ag_darkGreen()->UIColor{
-        return UIColor(hexString: "#2A6B89")!
+    class func darkGray()->UIColor{
+        return UIColor(r:42, g:42, b:42)
     }
     
-    class func ag_mediumGreen()->UIColor{
-        return UIColor(hexString: "#2F9FAE")!
-    }
-    
-    class func ag_lightGreen()->UIColor{
-        return UIColor(hexString: "#2FC0D6")!
+    class func whiteBG()->UIColor{
+        return UIColor(r:248, g:248, b:248)
     }
     
 
