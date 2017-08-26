@@ -10,8 +10,17 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var agColors = [UIColor]()
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fillWithColors()
+        self.view.backgroundColor = agColors[2]
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,6 +29,9 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func fillWithColors(){
+        agColors.append(contentsOf: [UIColor.ag_darkBlue(), UIColor.ag_mediumBlue(), UIColor.ag_lightBlue(), UIColor.ag_darkGreen(), UIColor.ag_mediumGreen(), UIColor.ag_lightGreen()] )
+    }
 
 }
 

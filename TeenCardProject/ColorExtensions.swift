@@ -35,28 +35,34 @@ extension UIColor {
         }
     }
     
-    /** This returns this App's theme color
+    /** This returns Agillitas's colors
      */
-    class func mainAppColor()->UIColor {
-        return UIColor(r: 15, g: 30, b: 35)
+    
+    class func ag_darkBlue()->UIColor{
+        return UIColor(hexString: "#1A2B5C")!
     }
     
-    class func secondaryAppColor()->UIColor {
-        return UIColor(r: 25, g: 25, b: 25)
+    class func ag_mediumBlue()->UIColor{
+        return UIColor(hexString: "#2B479E")!
     }
     
-    class func mainTextColor()->UIColor{
-        return UIColor(r: 185, g: 185, b: 185)
+    class func ag_lightBlue()->UIColor{
+        return UIColor(hexString: "#348DCC")!
     }
     
-    class func textHighlightColor()->UIColor{
-        return UIColor(r: 25, g: 37, b: 51)
+    class func ag_darkGreen()->UIColor{
+        return UIColor(hexString: "#2A6B89")!
     }
     
-    class func secondaryTextColor()->UIColor{
-        return UIColor(r: 140, g: 140, b: 140)
+    class func ag_mediumGreen()->UIColor{
+        return UIColor(hexString: "#2F9FAE")!
     }
     
+    class func ag_lightGreen()->UIColor{
+        return UIColor(hexString: "#2FC0D6")!
+    }
+    
+
     // MARK: - Green-ish Colors
     
     class func turquoise()->UIColor {

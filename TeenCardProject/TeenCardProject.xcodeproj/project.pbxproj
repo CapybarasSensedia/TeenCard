@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1AEE1A89CE359F52E0E28D1F /* Pods_TeenCardProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEA75F38E4D1A7A5721D899 /* Pods_TeenCardProject.framework */; };
+		26B4B3611F51C828007B34CE /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4B3601F51C828007B34CE /* ArrayExtensions.swift */; };
 		9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */; };
 		9C2E0ACD1F51BC6600290189 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACC1F51BC6600290189 /* FirstViewController.swift */; };
 		9C2E0ACF1F51BC6600290189 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACE1F51BC6600290189 /* SecondViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		0A89CE915F8489BAC33820BB /* Pods-TeenCardProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenCardProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject.release.xcconfig"; sourceTree = "<group>"; };
 		5EEA75F38E4D1A7A5721D899 /* Pods_TeenCardProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenCardProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B4B3601F51C828007B34CE /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		9C2E0AC71F51BC6600290189 /* TeenCardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenCardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C2E0ACC1F51BC6600290189 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A21A1E791F51C04A00530E6A /* ColorExtensions.swift */,
+				26B4B3601F51C828007B34CE /* ArrayExtensions.swift */,
 				9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */,
 				9C2E0ACC1F51BC6600290189 /* FirstViewController.swift */,
 				9C2E0ACE1F51BC6600290189 /* SecondViewController.swift */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2E0ACF1F51BC6600290189 /* SecondViewController.swift in Sources */,
+				26B4B3611F51C828007B34CE /* ArrayExtensions.swift in Sources */,
 				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
 				9C2E0ACD1F51BC6600290189 /* FirstViewController.swift in Sources */,
 				A21A1E7A1F51C04A00530E6A /* ColorExtensions.swift in Sources */,
