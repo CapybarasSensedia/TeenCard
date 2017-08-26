@@ -1,6 +1,6 @@
 //
 //  SecondViewController.swift
-//  CapybarasProject
+//  TeenCardProject
 //
 //  Created by Marcelo Martimiano Junior on 26/08/17.
 //  Copyright © 2017 Marcelo Martimiano Junior. All rights reserved.
