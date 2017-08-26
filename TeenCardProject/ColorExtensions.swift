@@ -38,7 +38,7 @@ extension UIColor {
     /** This returns this App's theme color
      */
     class func mainAppColor()->UIColor {
-        return UIColor(r: 15, g: 30, b: 35)
+        return UIColor(r: 243, g: 138, b: 0)
     }
     
     class func secondaryAppColor()->UIColor {

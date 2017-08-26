@@ -38,11 +38,15 @@ extension UIColor {
     /** This returns this App's theme color
      */
     class func mainAppColor()->UIColor {
-        return UIColor(r: 15, g: 30, b: 35)
+        return UIColor(r: 243, g: 138, b: 0)
     }
     
     class func secondaryAppColor()->UIColor {
-        return UIColor(r: 25, g: 25, b: 25)
+        return UIColor(r: 200, g: 73, b: 23)
+    }
+    
+    class func whiteBG()->UIColor {
+        return UIColor(r: 248, g: 248, b: 248)
     }
     
     class func mainTextColor()->UIColor{
@@ -55,99 +59,6 @@ extension UIColor {
     
     class func secondaryTextColor()->UIColor{
         return UIColor(r: 140, g: 140, b: 140)
-    }
-    
-    // MARK: - Green-ish Colors
-    
-    class func turquoise()->UIColor {
-        return UIColor(r: 26, g: 188, b: 156)
-    }
-    
-    class func greenSea()->UIColor {
-        return UIColor(r: 22, g: 160, b: 133)
-    }
-    
-    class func emerald()->UIColor {
-        return UIColor(r: 46, g: 204, b: 113)
-    }
-    
-    class func nephritis()->UIColor {
-        return UIColor(r: 39, g: 174, b: 96)
-    }
-    
-    // MARK: - Blue-ish Colors
-    
-    class func peterRiver()->UIColor {
-        return UIColor(r: 52, g: 152, b: 219)
-    }
-    
-    class func belizeHole()->UIColor {
-        return UIColor(r: 41, g: 128, b: 185)
-    }
-    
-    // MARK: - Purple-ish Colors
-    
-    class func amethyst()->UIColor {
-        return UIColor(r:155, g:89, b:182)
-    }
-    
-    class func wisteria()->UIColor {
-        return UIColor(r:142, g:68, b:173)
-    }
-    
-    // MARK: - Dark-ish Colors
-    class func wetAsphalt()->UIColor {
-        return UIColor(r:52, g:73, b:94)
-    }
-    
-    class func midnightBlue()->UIColor {
-        return UIColor(r:44, g:62, b:80)
-    }
-    
-    // MARK: - Yellow/Orange-ish Colors
-    
-    class func sunflower()->UIColor {
-        return UIColor(r:241, g:196, b:15)
-    }
-    
-    class func flatOrange()->UIColor {
-        return UIColor(r:240, g:152, b:46)
-    }
-    
-    class func carrot()->UIColor {
-        return UIColor(r:230, g:126, b:34)
-    }
-    
-    class func pumpkin()->UIColor {
-        return UIColor(r:211, g:84, b:0)
-    }
-    
-    // MARK: - Red-ish Colors
-    
-    class func alizarin()->UIColor {
-        return UIColor(r:231, g:76, b:60)
-    }
-    
-    class func pomegranate()->UIColor {
-        return UIColor(r:192, g:57, b:43)
-    }
-    
-    // MARK: - Gray-ish Colors
-    
-    class func clouds()->UIColor {
-        return UIColor(r:236, g:240, b:241)
-    }
-    
-    class func silver()->UIColor {
-        return UIColor(r:189, g:195, b:199)
-    }
-    
-    class func concrete()->UIColor {
-        return UIColor(r:149, g:165, b:166)
-    }
-    
-    class func asbestos()->UIColor {
-        return UIColor(r:127, g:140, b:141)
     }
 }
 

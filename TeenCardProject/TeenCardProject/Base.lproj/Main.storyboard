@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Linha Do Tempo View Controller-->
         <scene sceneID="hNz-n2-bh7">
@@ -69,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="80" y="362.5" width="215" height="17"/>
+                                <rect key="frame" x="80" y="362" width="215" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -304,26 +310,58 @@
                                     <action selector="EntrarTouchUpInside:" destination="igK-LL-pcI" eventType="touchUpInside" id="LkD-1m-EDy"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="queromeuprepago.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqT-jq-ik2">
+                                <rect key="frame" x="0.0" y="42" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="SHU-7S-oDW"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="**********" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ozR-MU-jDe">
+                                <rect key="frame" x="139" y="390" width="97" height="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="exemplo@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="myq-lF-pXl">
+                                <rect key="frame" x="75" y="318" width="225" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FCu-5V-KmB"/>
+                                </constraints>
+                                <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kwt-Rx-ZMi" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="Uxj-ar-W2T"/>
-                            <constraint firstItem="cKZ-81-Ax9" firstAttribute="top" secondItem="kwt-Rx-ZMi" secondAttribute="bottom" constant="156" id="avV-9j-V4G"/>
+                            <constraint firstItem="ozR-MU-jDe" firstAttribute="top" secondItem="myq-lF-pXl" secondAttribute="bottom" constant="42" id="9tK-11-ozp"/>
+                            <constraint firstItem="myq-lF-pXl" firstAttribute="width" secondItem="kwt-Rx-ZMi" secondAttribute="width" id="Lqv-CY-6sm"/>
+                            <constraint firstItem="qqT-jq-ik2" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="OBL-qs-Iio"/>
+                            <constraint firstItem="kwt-Rx-ZMi" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="P0L-ym-duS"/>
+                            <constraint firstItem="kwt-Rx-ZMi" firstAttribute="width" secondItem="00C-Ix-PGF" secondAttribute="width" multiplier="0.6" id="TQ4-UJ-Zat"/>
+                            <constraint firstItem="ozR-MU-jDe" firstAttribute="width" secondItem="kwt-Rx-ZMi" secondAttribute="width" constant="-128" id="Zz1-Nj-Qjs"/>
+                            <constraint firstItem="myq-lF-pXl" firstAttribute="centerY" secondItem="00C-Ix-PGF" secondAttribute="centerY" id="duE-jS-Ogh"/>
+                            <constraint firstItem="ozR-MU-jDe" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="gd1-iq-L8n"/>
+                            <constraint firstItem="qqT-jq-ik2" firstAttribute="width" secondItem="00C-Ix-PGF" secondAttribute="width" id="l0R-uo-md6"/>
+                            <constraint firstItem="qqT-jq-ik2" firstAttribute="top" secondItem="XBC-Pg-43S" secondAttribute="bottom" multiplier="0.5" constant="32" id="mUG-os-Snz"/>
+                            <constraint firstItem="cKZ-81-Ax9" firstAttribute="top" secondItem="kwt-Rx-ZMi" secondAttribute="bottom" constant="156" id="pYc-IB-NWn"/>
+                            <constraint firstItem="myq-lF-pXl" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="s4q-Mz-un4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="kwt-Rx-ZMi" id="cgl-bj-1GN"/>
                         <segue destination="cx9-OD-BGs" kind="show" identifier="EntrarSegue" id="MXj-fH-XXG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8A-vt-PLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1447" y="-750"/>
+            <point key="canvasLocation" x="-1447.8260869565217" y="-750.00000000000011"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SmM-uC-rgH">
             <objects>
                 <navigationController id="cx9-OD-BGs" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bee-kv-F3o">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="Bee-kv-F3o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -455,5 +493,6 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
+        <image name="queromeuprepago.png" width="1708" height="864"/>
     </resources>
 </document>
