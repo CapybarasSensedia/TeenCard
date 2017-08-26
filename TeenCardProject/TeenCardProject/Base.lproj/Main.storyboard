@@ -465,6 +465,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcD-AZ-RFF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lha-HT-Yur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -484,6 +486,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wlg-dh-pgU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Extrato" image="first" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tEO-Np-oLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -503,7 +507,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVQ-SA-dOf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Configurações" image="first" id="PyM-AL-BPV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WGx-dP-Phd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGx-dP-Phd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -522,6 +526,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgq-hL-H88" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Transferências" image="first" id="wMd-U0-Vg1"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rUP-92-Def">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -541,6 +547,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOg-c2-CzR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Minha Conta" image="first" id="Aet-dg-CgF"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mrt-bV-Q8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
