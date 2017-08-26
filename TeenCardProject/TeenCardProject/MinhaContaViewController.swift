@@ -10,10 +10,16 @@ import UIKit
 
 class MinhaContaViewController: UIViewController {
 
+    @IBOutlet var recarregarButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.recarregarButton.layer.cornerRadius = 10
+        self.recarregarButton.clipsToBounds = true
+        self.recarregarButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
     }
 
     override func didReceiveMemoryWarning() {

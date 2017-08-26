@@ -13,6 +13,9 @@
         <array key="AvenirLTStd-Roman.otf">
             <string>AvenirLTStd-Roman</string>
         </array>
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
         <array key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
         </array>
@@ -165,43 +168,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0F-X5-ndp">
-                                <rect key="frame" x="16" y="387" width="343" height="37"/>
+                                <rect key="frame" x="100" y="380" width="259" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-yO-3P8">
-                                <rect key="frame" x="16" y="443" width="343" height="37"/>
+                                <rect key="frame" x="100" y="443" width="259" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubd-02-Qwy">
-                                <rect key="frame" x="16" y="533" width="343" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-oE-7v3" userLabel="Container">
                                 <rect key="frame" x="0.0" y="65" width="375" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-9N-CyI">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="DKa-9N-CyI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvX-0j-v2V" customClass="ProfilePicture" customModule="TeenCardProject" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfilePicture" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-hj-25B" customClass="ProfilePicture" customModule="TeenCardProject" customModuleProvider="target">
                                         <rect key="frame" x="112" y="25" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Saldo atual" translatesAutoresizingMaskIntoConstraints="NO" id="q85-qI-6Z5">
+                                <rect key="frame" x="35" y="380" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ultima Recarga" translatesAutoresizingMaskIntoConstraints="NO" id="5Qj-qM-nh7">
+                                <rect key="frame" x="35" y="443" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubd-02-Qwy">
+                                <rect key="frame" x="32" y="532" width="311" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="1HT-Km-ebd"/>
+                    <connections>
+                        <outlet property="recarregarButton" destination="ubd-02-Qwy" id="vZc-gk-9N2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-vE-4B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -250,7 +264,7 @@
         <!--Title-->
         <scene sceneID="WeB-2O-SfW">
             <objects>
-                <tableViewController id="MCf-VN-ma0" sceneMemberID="viewController">
+                <tableViewController id="MCf-VN-ma0" customClass="MeusCartoesTableViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="a85-HV-uaJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,6 +285,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="Faa-vU-YXd"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="MeuCartaoSegue" id="FYT-Ii-AAc"/>
                     </connections>
@@ -324,12 +340,12 @@
                                 <rect key="frame" x="94" y="-100" width="187.5" height="432"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-Q3-SAr">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-Q3-SAr" userLabel="UserLine">
                                 <rect key="frame" x="56" y="359" width="262" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFK-y4-iRT">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KFK-y4-iRT" userLabel="PasswordLine">
                                 <rect key="frame" x="57" y="423" width="262" height="1"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -373,7 +389,9 @@
         <scene sceneID="SmM-uC-rgH">
             <objects>
                 <navigationController id="cx9-OD-BGs" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" misplaced="YES" id="Bee-kv-F3o">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="Bee-kv-F3o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -390,6 +408,8 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -413,6 +433,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcD-AZ-RFF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lha-HT-Yur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -432,6 +454,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wlg-dh-pgU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Extrato" image="first" id="cPa-gy-q4n"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tEO-Np-oLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -451,7 +475,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVQ-SA-dOf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Configurações" image="first" id="PyM-AL-BPV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WGx-dP-Phd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGx-dP-Phd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -470,6 +494,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgq-hL-H88" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Transferências" image="first" id="wMd-U0-Vg1"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rUP-92-Def">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -489,6 +515,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOg-c2-CzR" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Minha Conta" image="first" id="Aet-dg-CgF"/>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mrt-bV-Q8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -505,7 +533,11 @@
     </scenes>
     <resources>
         <image name="Login Background" width="750" height="1334"/>
+        <image name="Pattern" width="750" height="469"/>
+        <image name="ProfilePicture" width="797" height="800"/>
+        <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
+        <image name="Ultima Recarga" width="50" height="50"/>
         <image name="User Icon" width="50" height="50"/>
         <image name="first" width="30" height="30"/>
         <image name="queromeuprepago" width="854" height="432"/>
