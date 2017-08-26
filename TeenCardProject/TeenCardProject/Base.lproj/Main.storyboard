@@ -285,13 +285,19 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwt-Rx-ZMi">
                                 <rect key="frame" x="166" y="481" width="42" height="30"/>
-                                <state key="normal" title="Entrar"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="EntrarTouchUpInside:" destination="igK-LL-pcI" eventType="touchUpInside" id="LkD-1m-EDy"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="kwt-Rx-ZMi" firstAttribute="centerX" secondItem="00C-Ix-PGF" secondAttribute="centerX" id="Uxj-ar-W2T"/>
+                            <constraint firstItem="cKZ-81-Ax9" firstAttribute="top" secondItem="kwt-Rx-ZMi" secondAttribute="bottom" constant="156" id="avV-9j-V4G"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="cx9-OD-BGs" kind="show" identifier="EntrarSegue" id="MXj-fH-XXG"/>

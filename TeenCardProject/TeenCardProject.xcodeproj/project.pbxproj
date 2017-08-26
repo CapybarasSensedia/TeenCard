@@ -58,7 +58,6 @@
 		2648FB1A1F51F1DB005FB2C4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A21A1E791F51C04A00530E6A /* ColorExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -82,6 +81,9 @@
 		9C2E0AC91F51BC6600290189 /* TeenCardProject */ = {
 			isa = PBXGroup;
 			children = (
+				A223E1641F51E7D300C9764D /* View */,
+				A223E1631F51E7CA00C9764D /* Model */,
+				A223E1621F51E7AB00C9764D /* Controller */,
 				9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */,
 				A223E16D1F51F28B00C9764D /* ColorExtensions.swift */,
 				9C2E0AD01F51BC6600290189 /* Main.storyboard */,
@@ -103,11 +105,6 @@
 				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
 				A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */,
 				A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */,
-				2648FB1A1F51F1DB005FB2C4 /* Extensions */,
-				9C2E0AD01F51BC6600290189 /* Main.storyboard */,
-				9C2E0AD31F51BC6600290189 /* Assets.xcassets */,
-				9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */,
-				9C2E0AD81F51BC6600290189 /* Info.plist */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -115,6 +112,7 @@
 		A223E1631F51E7CA00C9764D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2648FB1A1F51F1DB005FB2C4 /* Extensions */,
 				A223E1651F51E9A900C9764D /* ProfilePicture.swift */,
 			);
 			name = Model;
