@@ -12,6 +12,7 @@ class RegistroViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -20,10 +21,11 @@ class RegistroViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor.mainAppColor()
         
-        loginButton.backgroundColor = UIColor.secondaryAppColor()
+        loginButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
+        loginButton.layer.cornerRadius = 10
+        loginButton.clipsToBounds = true
+        
         // Do any additional setup after loading the view.
     }
 
