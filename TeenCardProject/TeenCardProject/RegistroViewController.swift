@@ -9,10 +9,16 @@
 import UIKit
 
 class RegistroViewController: UIViewController {
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view.backgroundColor = UIColor.mainAppColor()
         // Do any additional setup after loading the view.
     }
 
