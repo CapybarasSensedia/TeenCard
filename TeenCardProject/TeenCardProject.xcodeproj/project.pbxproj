@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2648FB2A1F522A0F005FB2C4 /* MeusCartoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2648FB291F522A0F005FB2C4 /* MeusCartoesViewController.swift */; };
 		9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */; };
 		9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */; };
 		9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */; };
 		9C2E0AD21F51BC6600290189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD01F51BC6600290189 /* Main.storyboard */; };
 		9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD31F51BC6600290189 /* Assets.xcassets */; };
 		9C2E0AD71F51BC6600290189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */; };
+		9C5994CE1F5226AA008597C4 /* CartaoPrePago.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5994CD1F5226AA008597C4 /* CartaoPrePago.swift */; };
+		9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */; };
 		A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */; };
 		A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */; };
 		A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */; };
@@ -24,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2648FB291F522A0F005FB2C4 /* MeusCartoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesViewController.swift; sourceTree = "<group>"; };
 		9C2E0AC71F51BC6600290189 /* TeenCardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenCardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinhaDoTempoViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		9C2E0AD31F51BC6600290189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C2E0AD61F51BC6600290189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C2E0AD81F51BC6600290189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5994CD1F5226AA008597C4 /* CartaoPrePago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartaoPrePago.swift; sourceTree = "<group>"; };
+		9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeCartoes.swift; sourceTree = "<group>"; };
 		A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferenciaViewController.swift; sourceTree = "<group>"; };
 		A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaContaViewController.swift; sourceTree = "<group>"; };
 		A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracoesViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A223E15C1F51D9F600C9764D /* RegistroViewController.swift */,
+				2648FB291F522A0F005FB2C4 /* MeusCartoesViewController.swift */,
 				9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */,
 				9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */,
 				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
@@ -112,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				2648FB1A1F51F1DB005FB2C4 /* Extensions */,
+				9C5994CD1F5226AA008597C4 /* CartaoPrePago.swift */,
+				9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -155,7 +164,7 @@
 				TargetAttributes = {
 					9C2E0AC61F51BC6600290189 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = KYTAYKS6H2;
+						DevelopmentTeam = J5KQYDNX5E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,9 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */,
+				2648FB2A1F522A0F005FB2C4 /* MeusCartoesViewController.swift in Sources */,
 				A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */,
 				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
 				A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */,
+				9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */,
 				A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */,
 				A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */,
 				A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */,
@@ -329,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;
@@ -342,7 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;

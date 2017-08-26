@@ -14,6 +14,8 @@ class RegistroViewController: UIViewController {
     
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
