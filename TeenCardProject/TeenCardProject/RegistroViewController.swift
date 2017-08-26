@@ -10,6 +10,9 @@ import UIKit
 
 class RegistroViewController: UIViewController {
     
+    @IBOutlet weak var loginButton: UIButton!
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -19,6 +22,8 @@ class RegistroViewController: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.mainAppColor()
+        
+        loginButton.backgroundColor = UIColor.secondaryAppColor()
         // Do any additional setup after loading the view.
     }
 

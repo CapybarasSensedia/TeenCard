@@ -42,7 +42,11 @@ extension UIColor {
     }
     
     class func secondaryAppColor()->UIColor {
-        return UIColor(r: 25, g: 25, b: 25)
+        return UIColor(r: 200, g: 73, b: 23)
+    }
+    
+    class func whiteBG()->UIColor {
+        return UIColor(r: 248, g: 248, b: 248)
     }
     
     class func mainTextColor()->UIColor{
