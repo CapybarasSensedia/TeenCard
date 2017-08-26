@@ -24,7 +24,8 @@
 		A223E16A1F51F16E00C9764D /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = A223E1681F51F16E00C9764D /* Montserrat */; };
 		A223E16C1F51F26700C9764D /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E16B1F51F26700C9764D /* MeusCartoesTableViewController.swift */; };
 		A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E16D1F51F28B00C9764D /* ColorExtensions.swift */; };
-		A22B6B511F5210D8001F7B78 /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B6B501F5210D8001F7B78 /* MeusCartoesTableViewController.swift */; };
+		A22B6B551F521292001F7B78 /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B6B541F521292001F7B78 /* ArrayExtensions.swift */; };
+		A22B6B571F5212A1001F7B78 /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22B6B561F5212A1001F7B78 /* MeusCartoesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,8 @@
 		A223E1681F51F16E00C9764D /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		A223E16B1F51F26700C9764D /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
 		A223E16D1F51F28B00C9764D /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
-		A22B6B501F5210D8001F7B78 /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
+		A22B6B541F521292001F7B78 /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		A22B6B561F5212A1001F7B78 /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,8 @@
 		2648FB1A1F51F1DB005FB2C4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A22B6B541F521292001F7B78 /* ArrayExtensions.swift */,
+				A223E16D1F51F28B00C9764D /* ColorExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -92,7 +96,6 @@
 				A223E1631F51E7CA00C9764D /* Model */,
 				A223E1621F51E7AB00C9764D /* Controller */,
 				9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */,
-				A223E16D1F51F28B00C9764D /* ColorExtensions.swift */,
 				9C2E0AD01F51BC6600290189 /* Main.storyboard */,
 				A223E1671F51F16E00C9764D /* Avenir LT Std */,
 				A223E1681F51F16E00C9764D /* Montserrat */,
@@ -107,13 +110,13 @@
 		A223E1621F51E7AB00C9764D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A22B6B561F5212A1001F7B78 /* MeusCartoesTableViewController.swift */,
 				A223E15C1F51D9F600C9764D /* RegistroViewController.swift */,
 				9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */,
 				9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */,
 				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
 				A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */,
 				A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */,
-				A22B6B501F5210D8001F7B78 /* MeusCartoesTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -221,12 +224,13 @@
 			files = (
 				9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */,
 				A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */,
+				A22B6B571F5212A1001F7B78 /* MeusCartoesTableViewController.swift in Sources */,
 				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
 				A223E1661F51E9A900C9764D /* ProfilePicture.swift in Sources */,
 				2648FB1C1F51F92A005FB2C4 /* PillButton.swift in Sources */,
-				A22B6B511F5210D8001F7B78 /* MeusCartoesTableViewController.swift in Sources */,
 				A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */,
 				A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */,
+				A22B6B551F521292001F7B78 /* ArrayExtensions.swift in Sources */,
 				A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */,
 				A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */,
 				9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */,
