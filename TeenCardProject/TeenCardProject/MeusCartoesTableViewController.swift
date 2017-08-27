@@ -10,6 +10,11 @@ import UIKit
 
 class MeusCartoesTableViewController: UITableViewController {
 
+    // status bar with white text color
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         GerenciadorDeCartoes.getCartoesDoCliente()
