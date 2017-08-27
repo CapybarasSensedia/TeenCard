@@ -752,7 +752,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9RQ-Iu-W33" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4314.3999999999996" y="-949.47526236881572"/>
+            <point key="canvasLocation" x="-4273" y="-949"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4gJ-ne-evf">
@@ -853,6 +853,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="wq6-ts-U1R" id="yyi-u9-Dq1"/>
                         <outlet property="loginButton" destination="kwt-Rx-ZMi" id="cgl-bj-1GN"/>
+                        <outlet property="passwordField" destination="ozR-MU-jDe" id="GBG-Ek-dAE"/>
                         <outlet property="userField" destination="myq-lF-pXl" id="6n8-DD-JNs"/>
                         <segue destination="cx9-OD-BGs" kind="show" identifier="loginFilha" id="MXj-fH-XXG"/>
                         <segue destination="PUo-J4-iy2" kind="show" identifier="loginPai" id="uIr-j2-YT1"/>
@@ -1040,7 +1041,6 @@
         <image name="Login Background" width="750" height="1334"/>
         <image name="Minha Conta Icon" width="25" height="22"/>
         <image name="Pattern" width="750" height="469"/>
-        <image name="Porquinho" width="56" height="49"/>
         <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
         <image name="Seu Nivel" width="181" height="54"/>
