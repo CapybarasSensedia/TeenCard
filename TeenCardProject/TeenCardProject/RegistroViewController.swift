@@ -27,8 +27,6 @@ class RegistroViewController: UIViewController {
         loginButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
-        
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
