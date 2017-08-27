@@ -12,7 +12,6 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
-    
     @IBOutlet weak var userField: UITextField!
     
     // status bar with white text color
