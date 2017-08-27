@@ -10,14 +10,28 @@ import UIKit
 
 class MinhaContaViewController: UIViewController {
 
+    // status bar with white text color
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBOutlet var recarregarButton: UIButton!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cardNumberLabel: UILabel!
     @IBOutlet weak var saldo: UILabel!
-    
     @IBOutlet weak var saldoActivityIndicator: UIActivityIndicatorView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Sets background to a blank/empty image
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        // Sets shadow (line below the bar) to a blank image
+        UINavigationBar.appearance().shadowImage = UIImage()
+        // Sets the translucent background color
+        UINavigationBar.appearance().backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0)
+        // Set translucent. (Default value is already true, so this can be removed if desired.)
+        UINavigationBar.appearance().isTranslucent = true
         
         self.recarregarButton.layer.cornerRadius = 10
         self.recarregarButton.clipsToBounds = true
