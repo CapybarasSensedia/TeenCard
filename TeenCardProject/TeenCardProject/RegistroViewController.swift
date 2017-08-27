@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistroViewController: UIViewController {
+class RegistroViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
@@ -27,6 +27,8 @@ class RegistroViewController: UIViewController {
         loginButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
+        
+        self.userField.delegate = self;
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +36,10 @@ class RegistroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
         
