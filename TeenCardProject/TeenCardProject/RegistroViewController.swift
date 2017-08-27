@@ -14,6 +14,7 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var userField: UITextField!
     
+    @IBOutlet weak var passwordField: UITextField!
     // status bar with white text color
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -36,6 +37,7 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
         
         self.userField.delegate = self
+        self.passwordField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,7 +56,6 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
-        
         if(self.userField.text! == "clara@gmail.com") {
             performSegue(withIdentifier: "loginFilha", sender: Any?.self)
         } else if(self.userField.text! == "jose@gmail.com"){
