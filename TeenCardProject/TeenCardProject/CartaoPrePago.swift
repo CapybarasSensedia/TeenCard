@@ -27,6 +27,6 @@ class CartaoPrePago
     }
     
     enum TipoDoCartao {
-        case TeenCardPai, TeenCardFilho, InternacionalAliExpress, MaisQuePresente, MundoLivre, AgillitasCorporativo
+        case TeenCardTitular, TeenCardDependente, InternacionalAliExpress, MaisQuePresente, MundoLivre, AgillitasCorporativo
     }
 }
