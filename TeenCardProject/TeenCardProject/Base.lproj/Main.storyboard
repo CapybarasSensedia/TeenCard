@@ -25,29 +25,23 @@
     </customFonts>
     <scenes>
         <!--Linha Do Tempo View Controller-->
-        <scene sceneID="hNz-n2-bh7">
+        <scene sceneID="Wnm-Gr-oPW">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="LinhaDoTempoViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                <tableViewController id="VSH-Je-XAy" customClass="LinhaDoTempoViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZHz-9P-UkB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timelineMockup" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-Jp-b3g">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="LNt-7S-Bxf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="VSH-Je-XAy" id="1LQ-uv-OP6"/>
+                            <outlet property="delegate" destination="VSH-Je-XAy" id="aiN-Rl-WvZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Kwf-WF-et7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RjX-Uu-JWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-850" y="1681"/>
+            <point key="canvasLocation" x="-1449" y="1530"/>
         </scene>
         <!--Extrato View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -114,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="630" y="1681"/>
         </scene>
-        <!--Minha Conta View Controller-->
+        <!--Minha Conta-->
         <scene sceneID="dCE-Lf-PH4">
             <objects>
                 <viewController id="uwM-Ri-CCW" customClass="MinhaContaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -156,9 +150,21 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto de perfil" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-hj-25B">
-                                        <rect key="frame" x="112" y="88" width="150" height="150"/>
+                                        <rect key="frame" x="121" y="70" width="130" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="9QI-x0-VSH">
+                                        <rect key="frame" x="144" y="208" width="86" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH3-eD-FXL" userLabel="Seu Nivel">
+                                        <rect key="frame" x="137" y="224" width="99" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" backgroundImage="Seu Nivel"/>
+                                        <connections>
+                                            <action selector="SeuNivelTouchUpInside:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="fRk-rI-XFC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -206,61 +212,59 @@
                                 <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poupe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9B-op-kc0">
-                                <rect key="frame" x="100" y="508" width="138" height="40"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-gV-Qkb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="este mês" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-oO-ky8">
-                                <rect key="frame" x="235" y="508" width="81" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="para ganhar pontos e subir" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-t3-CR6">
-                                <rect key="frame" x="100" y="535" width="236" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porquinho" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-ge-aFq">
-                                <rect key="frame" x="35" y="508" width="32" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slL-QK-fbA" userLabel="Saldo">
-                                <rect key="frame" x="182" y="508" width="61" height="40"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-RX-Xd4">
+                                <rect key="frame" x="57" y="193" width="261" height="286"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" white="0.60190286240000002" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdD-DA-d8j">
-                                <rect key="frame" x="160" y="508" width="20" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
-                                <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="de nível!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-qW-cva">
-                                <rect key="frame" x="100" y="562" width="236" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDG-CP-NwC">
+                                        <rect key="frame" x="218" y="2" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissLevelCard:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="7hB-hl-cq8"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrela Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="8qi-UO-qJO">
+                                        <rect key="frame" x="75" y="40" width="110" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrelas Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="npG-pv-J2z">
+                                        <rect key="frame" x="103" y="154" width="54" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Você está no nível júnior. Poupe mais dinheiro para ganhar pontos e subir de nível" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMg-Kl-QsY">
+                                        <rect key="frame" x="39" y="176" width="183" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="0.49363434314727783" blue="0.25191175937652588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1HT-Km-ebd"/>
+                    <navigationItem key="navigationItem" title="Minha Conta" id="1HT-Km-ebd"/>
                     <connections>
+                        <outlet property="LevelCard" destination="hlL-RX-Xd4" id="ci0-0F-tJS"/>
+                        <outlet property="badgeLevel" destination="8qi-UO-qJO" id="kgv-Be-JIv"/>
+                        <outlet property="blurLayer" destination="kdo-gV-Qkb" id="bzN-Dj-N1z"/>
                         <outlet property="cardNumberLabel" destination="fg6-hv-oVH" id="PNW-qA-xjQ"/>
+                        <outlet property="levelInfo" destination="LMg-Kl-QsY" id="cTn-yD-3AZ"/>
                         <outlet property="nameLabel" destination="laA-yC-aOD" id="OWo-0P-axr"/>
                         <outlet property="saldo" destination="HhR-va-cfp" id="X3n-OE-1SV"/>
                         <outlet property="saldoActivityIndicator" destination="D69-ZK-HEK" id="xeQ-qC-Zzj"/>
+                        <outlet property="starsLevel" destination="npG-pv-J2z" id="rlN-gn-2pP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-vE-4B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -851,7 +855,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="eYm-qy-YgY"/>
+                        <segue destination="VSH-Je-XAy" kind="relationship" relationship="rootViewController" id="O35-7T-anH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGy-2c-kaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -961,6 +965,8 @@
         <image name="Background" width="320" height="60"/>
         <image name="Config" width="22" height="22"/>
         <image name="Divider" width="345" height="50"/>
+        <image name="Estrela Nivel" width="263" height="220"/>
+        <image name="Estrelas Nivel" width="121" height="32"/>
         <image name="Extrato Icon" width="22" height="21"/>
         <image name="Foto de perfil" width="341" height="342"/>
         <image name="Login Background" width="750" height="1334"/>
@@ -969,12 +975,13 @@
         <image name="Porquinho" width="56" height="49"/>
         <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
+        <image name="Seu Nivel" width="181" height="54"/>
+        <image name="Star" width="128" height="21"/>
         <image name="Timeline Icon" width="25" height="25"/>
         <image name="Transferància" width="25" height="22"/>
         <image name="Ultima Recarga" width="50" height="50"/>
         <image name="User Icon" width="50" height="50"/>
         <image name="extratoMockup" width="786" height="1298"/>
         <image name="queromeuprepago" width="854" height="432"/>
-        <image name="timelineMockup" width="786" height="1164"/>
     </resources>
 </document>

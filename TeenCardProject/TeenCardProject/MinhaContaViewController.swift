@@ -14,7 +14,12 @@ class MinhaContaViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
+    @IBOutlet var levelInfo: UITextView!
+    @IBOutlet var starsLevel: UIImageView!
+    @IBOutlet var badgeLevel: UIImageView!
+    @IBOutlet var blurLayer: UIImageView!
+    @IBOutlet var LevelCard: UIView!
     @IBOutlet var recarregarButton: UIButton!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cardNumberLabel: UILabel!
@@ -23,7 +28,14 @@ class MinhaContaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.levelInfo.isHidden = true
+        self.starsLevel.isHidden = true
+        self.badgeLevel.isHidden = true
+        self.blurLayer.isHidden = true
+        self.LevelCard.isHidden = true
+        self.LevelCard.layer.cornerRadius = self.LevelCard.frame.width/16
+    
+        self.LevelCard.clipsToBounds = true
         self.recarregarButton.layer.cornerRadius = 10
         self.recarregarButton.clipsToBounds = true
         
@@ -35,6 +47,24 @@ class MinhaContaViewController: UIViewController {
         super.viewWillAppear(animated)
         self.carregaDados()
     }
+    
+    
+    @IBAction func SeuNivelTouchUpInside(_ sender: Any) {
+        self.blurLayer.isHidden = false
+        self.LevelCard.isHidden = false
+        self.levelInfo.isHidden = false
+        self.starsLevel.isHidden = false
+        self.badgeLevel.isHidden = false
+    }
+    
+    @IBAction func dismissLevelCard(_ sender: Any) {
+        self.blurLayer.isHidden = true
+        self.LevelCard.isHidden = true
+        self.levelInfo.isHidden = true
+        self.starsLevel.isHidden = true
+        self.badgeLevel.isHidden = true
+    }
+    
     func carregaDados()
     {
         self.atualizaSaldo()
