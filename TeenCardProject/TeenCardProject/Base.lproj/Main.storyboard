@@ -22,6 +22,9 @@
         <array key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
         </array>
+        <array key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Linha Do Tempo View Controller-->
@@ -173,15 +176,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo Atual:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0F-X5-ndp">
                                 <rect key="frame" x="100" y="380" width="100" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Última Recarga:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-yO-3P8">
-                                <rect key="frame" x="100" y="443" width="130" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-oE-7v3" userLabel="Container">
@@ -193,7 +189,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto de perfil" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-hj-25B">
-                                        <rect key="frame" x="112" y="25" width="150" height="150"/>
+                                        <rect key="frame" x="95" y="8" width="184" height="184"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -239,6 +235,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Última Recarga:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ww-yO-3P8">
+                                <rect key="frame" x="100" y="443" width="130" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -295,7 +298,7 @@
             </objects>
             <point key="canvasLocation" x="1473" y="1530"/>
         </scene>
-        <!--Title-->
+        <!--Meus Cartões-->
         <scene sceneID="WeB-2O-SfW">
             <objects>
                 <tableViewController id="MCf-VN-ma0" customClass="MeusCartoesTableViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -318,7 +321,7 @@
                             <outlet property="delegate" destination="MCf-VN-ma0" id="ap0-m8-lak"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Title" id="Faa-vU-YXd"/>
+                    <navigationItem key="navigationItem" title="Meus Cartões" id="Faa-vU-YXd"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -426,6 +429,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleAspectFill" misplaced="YES" id="Bee-kv-F3o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="MCf-VN-ma0" kind="relationship" relationship="rootViewController" id="EZv-m0-wB5"/>
@@ -446,6 +453,7 @@
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="gcD-AZ-RFF" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -463,13 +471,17 @@
         <scene sceneID="DUU-fe-G5O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcD-AZ-RFF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Timeline Icon" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lha-HT-Yur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -484,13 +496,17 @@
         <scene sceneID="ZR1-8o-joW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wlg-dh-pgU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Extrato" image="first" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Extrato" image="Extrato Icon" id="cPa-gy-q4n"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tEO-Np-oLS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -505,11 +521,15 @@
         <scene sceneID="ff5-sg-3d7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVQ-SA-dOf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Configurações" image="first" id="PyM-AL-BPV"/>
+                    <tabBarItem key="tabBarItem" title="Configurações" image="Config" id="PyM-AL-BPV"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WGx-dP-Phd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WGx-dP-Phd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -524,13 +544,17 @@
         <scene sceneID="FQI-hW-RmI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jgq-hL-H88" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Transferências" image="first" id="wMd-U0-Vg1"/>
+                    <tabBarItem key="tabBarItem" title="Transferências" image="Transferància" id="wMd-U0-Vg1"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rUP-92-Def">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -545,13 +569,17 @@
         <scene sceneID="PL0-fP-Ui4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOg-c2-CzR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Minha Conta" image="first" id="Aet-dg-CgF"/>
+                    <tabBarItem key="tabBarItem" title="Minha Conta" image="Minha Conta Icon" id="Aet-dg-CgF"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mrt-bV-Q8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.7843137255" green="0.28627450980000002" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -565,15 +593,19 @@
     </scenes>
     <resources>
         <image name="BackgroundButton" width="320" height="60"/>
+        <image name="Config" width="22" height="22"/>
         <image name="Divider" width="345" height="50"/>
+        <image name="Extrato Icon" width="22" height="21"/>
         <image name="Foto de perfil" width="341" height="342"/>
         <image name="Login Background" width="750" height="1334"/>
+        <image name="Minha Conta Icon" width="25" height="22"/>
         <image name="Pattern" width="750" height="469"/>
         <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
+        <image name="Timeline Icon" width="25" height="25"/>
+        <image name="Transferància" width="25" height="22"/>
         <image name="Ultima Recarga" width="50" height="50"/>
         <image name="User Icon" width="50" height="50"/>
-        <image name="first" width="30" height="30"/>
         <image name="queromeuprepago" width="854" height="432"/>
     </resources>
 </document>
