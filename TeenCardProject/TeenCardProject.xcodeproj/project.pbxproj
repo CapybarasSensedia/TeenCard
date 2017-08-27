@@ -248,7 +248,7 @@
 				TargetAttributes = {
 					9C2E0AC61F51BC6600290189 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = KYTAYKS6H2;
+						DevelopmentTeam = J5KQYDNX5E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -485,7 +485,7 @@
 			baseConfigurationReference = 89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;
@@ -499,7 +499,7 @@
 			baseConfigurationReference = 75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;

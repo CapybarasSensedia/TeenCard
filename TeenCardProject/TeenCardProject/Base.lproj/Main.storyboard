@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -483,19 +484,46 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhu-wF-TRV">
+                                <rect key="frame" x="27" y="518" width="320" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="9SG-ij-JLv"/>
+                                    <constraint firstAttribute="width" secondItem="Xhu-wF-TRV" secondAttribute="height" multiplier="16:3" id="Sba-xc-0qV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Fazer Recarga" backgroundImage="Background">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="carregarButton:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="XNL-X5-gwq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xhu-wF-TRV" firstAttribute="centerX" secondItem="n4f-7s-iSC" secondAttribute="centerX" id="6Ob-Gk-kCb"/>
+                            <constraint firstItem="HO9-kl-FDX" firstAttribute="top" secondItem="Xhu-wF-TRV" secondAttribute="bottom" constant="40" id="fif-gF-D7T"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Minha Conta" id="1HT-Km-ebd"/>
                     <connections>
                         <outlet property="LevelCard" destination="nZA-y9-fce" id="aEx-6w-g3W"/>
+                        <outlet property="RSLabel" destination="sdD-DA-d8j" id="DS5-n8-YcQ"/>
                         <outlet property="badgeLevel" destination="Guf-BV-2ki" id="7qI-ML-GK5"/>
                         <outlet property="blurLayer" destination="9X0-Mo-G2g" id="e8c-ph-CdM"/>
                         <outlet property="cardNumberLabel" destination="fg6-hv-oVH" id="PNW-qA-xjQ"/>
+                        <outlet property="carregarButton" destination="Xhu-wF-TRV" id="uph-4j-Vrd"/>
+                        <outlet property="denivel" destination="ae8-qW-cva" id="Qrd-3m-y4m"/>
                         <outlet property="levelInfo" destination="IWA-Kr-zhQ" id="bnR-wW-z1w"/>
                         <outlet property="nameLabel" destination="laA-yC-aOD" id="OWo-0P-axr"/>
+                        <outlet property="poupancaEsteMes" destination="jRo-oO-ky8" id="IfM-sR-0sm"/>
+                        <outlet property="poupancaTexto" destination="b6k-t3-CR6" id="ulg-HI-lhF"/>
+                        <outlet property="poupe" destination="I2D-y4-SLS" id="D8e-Ea-mVz"/>
+                        <outlet property="poupeImageView" destination="Dmk-ge-aFq" id="dgX-vc-C56"/>
                         <outlet property="saldo" destination="HhR-va-cfp" id="X3n-OE-1SV"/>
                         <outlet property="saldoActivityIndicator" destination="D69-ZK-HEK" id="xeQ-qC-Zzj"/>
+                        <outlet property="saldoRestante" destination="slL-QK-fbA" id="ZKu-7V-gXk"/>
                         <outlet property="starsLevel" destination="ECU-Nr-pIT" id="Fga-Ef-mpX"/>
                     </connections>
                 </viewController>
@@ -1070,6 +1098,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="wq6-ts-U1R" id="yyi-u9-Dq1"/>
                         <outlet property="loginButton" destination="kwt-Rx-ZMi" id="cgl-bj-1GN"/>
+                        <outlet property="passwordField" destination="ozR-MU-jDe" id="GBG-Ek-dAE"/>
                         <outlet property="userField" destination="myq-lF-pXl" id="6n8-DD-JNs"/>
                         <segue destination="MCf-VN-ma0" kind="show" identifier="loginFilha" id="4vr-Nn-0d3"/>
                         <segue destination="oqJ-gQ-cYc" kind="show" identifier="loginPai" id="l2O-z5-2kV"/>
@@ -1091,10 +1120,10 @@
                         <color key="selectedImageTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="gcD-AZ-RFF" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="Wlg-dh-pgU" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="Jgq-hL-H88" kind="relationship" relationship="viewControllers" id="d9i-UA-jdX"/>
                         <segue destination="aOg-c2-CzR" kind="relationship" relationship="viewControllers" id="dUG-nR-wYr"/>
+                        <segue destination="gcD-AZ-RFF" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Jgq-hL-H88" kind="relationship" relationship="viewControllers" id="d9i-UA-jdX"/>
+                        <segue destination="Wlg-dh-pgU" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="nVQ-SA-dOf" kind="relationship" relationship="viewControllers" id="SjY-9E-5NX"/>
                     </connections>
                 </tabBarController>
@@ -1380,7 +1409,6 @@
         <image name="Login Background" width="750" height="1334"/>
         <image name="Minha Conta Icon" width="25" height="22"/>
         <image name="Pattern" width="750" height="469"/>
-        <image name="Porquinho" width="56" height="49"/>
         <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
         <image name="Seu Nivel" width="181" height="54"/>
