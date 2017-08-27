@@ -16,6 +16,10 @@
 		9C2E0AD71F51BC6600290189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */; };
 		9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */; };
 		9C7B12111F5265CE000FA0D5 /* CartaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7B12101F5265CE000FA0D5 /* CartaoCell.xib */; };
+		9C9F383E1F52EBDD00C95F6C /* VisaCheckoutSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9F383D1F52EBDD00C95F6C /* VisaCheckoutSDK.framework */; };
+		9C9F383F1F52EBDD00C95F6C /* VisaCheckoutSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9F383D1F52EBDD00C95F6C /* VisaCheckoutSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9C9F38431F52EC1B00C95F6C /* TrustDefender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9F38411F52EC1B00C95F6C /* TrustDefender.framework */; };
+		9C9F38441F52EC1B00C95F6C /* VisaCheckoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F38421F52EC1B00C95F6C /* VisaCheckoutButton.swift */; };
 		9CE2BB1B1F5299D300234940 /* TeenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2BB1A1F5299D300234940 /* TeenCard.swift */; };
 		A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */; };
 		A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */; };
@@ -38,6 +42,20 @@
 		B87A430CF0CAC8DC9E63315E /* Pods_TeenCardProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9C9F38401F52EBDD00C95F6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9C9F383F1F52EBDD00C95F6C /* VisaCheckoutSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenCardProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject.release.xcconfig"; sourceTree = "<group>"; };
 		89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenCardProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -52,6 +70,9 @@
 		9C2E0AD81F51BC6600290189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeCartoes.swift; sourceTree = "<group>"; };
 		9C7B12101F5265CE000FA0D5 /* CartaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartaoCell.xib; sourceTree = "<group>"; };
+		9C9F383D1F52EBDD00C95F6C /* VisaCheckoutSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VisaCheckoutSDK.framework; sourceTree = "<group>"; };
+		9C9F38411F52EC1B00C95F6C /* TrustDefender.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TrustDefender.framework; sourceTree = "<group>"; };
+		9C9F38421F52EC1B00C95F6C /* VisaCheckoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisaCheckoutButton.swift; sourceTree = "<group>"; };
 		9CE2BB1A1F5299D300234940 /* TeenCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenCard.swift; sourceTree = "<group>"; };
 		A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferenciaViewController.swift; sourceTree = "<group>"; };
 		A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaContaViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9F38431F52EC1B00C95F6C /* TrustDefender.framework in Frameworks */,
+				9C9F383E1F52EBDD00C95F6C /* VisaCheckoutSDK.framework in Frameworks */,
 				B87A430CF0CAC8DC9E63315E /* Pods_TeenCardProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -105,6 +128,9 @@
 		9C2E0ABE1F51BC6600290189 = {
 			isa = PBXGroup;
 			children = (
+				9C9F38411F52EC1B00C95F6C /* TrustDefender.framework */,
+				9C9F38421F52EC1B00C95F6C /* VisaCheckoutButton.swift */,
+				9C9F383D1F52EBDD00C95F6C /* VisaCheckoutSDK.framework */,
 				9C2E0AC91F51BC6600290189 /* TeenCardProject */,
 				9C2E0AC81F51BC6600290189 /* Products */,
 				C0D49AD6568A9EB23E0017D0 /* Pods */,
@@ -226,6 +252,7 @@
 				9C2E0AC51F51BC6600290189 /* Resources */,
 				6CA98606980655899801A342 /* [CP] Embed Pods Frameworks */,
 				FBADDE404B82472700FD250A /* [CP] Copy Pods Resources */,
+				9C9F38401F52EBDD00C95F6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,7 +275,7 @@
 				TargetAttributes = {
 					9C2E0AC61F51BC6600290189 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = KYTAYKS6H2;
+						DevelopmentTeam = J5KQYDNX5E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -346,6 +373,7 @@
 				9C2AE1161F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift in Sources */,
 				A2C7820E1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift in Sources */,
 				A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */,
+				9C9F38441F52EC1B00C95F6C /* VisaCheckoutButton.swift in Sources */,
 				A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */,
 				A2C782161F52DB15007E9BA1 /* ContaViewController.swift in Sources */,
 				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
@@ -485,7 +513,11 @@
 			baseConfigurationReference = 89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;
@@ -499,7 +531,11 @@
 			baseConfigurationReference = 75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KYTAYKS6H2;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TeenCardProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;

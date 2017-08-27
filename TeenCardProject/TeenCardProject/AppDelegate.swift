@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VisaCheckoutSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        // Set translucent. (Default value is already true, so this can be removed if desired.)
 //        UINavigationBar.appearance().isTranslucent = true
         
-        
+        VisaCheckoutSDK.configure(environment: .sandbox, apiKey: "GZRXN6G35AJ1QNAMI7ZX21TCBxUXR1R2lKLVaerPXZPyADu84")
         return true
     }
 
