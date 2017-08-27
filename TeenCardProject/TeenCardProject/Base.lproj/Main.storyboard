@@ -409,7 +409,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="wjd-k9-ZSI"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -433,7 +433,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="YYD-DF-MhH"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
@@ -457,7 +457,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="ARj-Ug-CZ8"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -481,7 +481,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="yQ1-dX-mGm"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -505,7 +505,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="QAJ-ti-y0x"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -529,7 +529,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="AWa-jE-6TW"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -557,7 +557,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="mol-sK-1me"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -581,7 +581,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="LHY-4D-cvz"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -605,7 +605,7 @@
                                                         <constraint firstAttribute="width" constant="375" id="cYz-wC-d4T"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -652,7 +652,51 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjQ-mK-5cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="921" y="-752"/>
+            <point key="canvasLocation" x="921" y="-948"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aPv-J7-Gn5">
+            <objects>
+                <viewController id="86u-WE-4he" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jlq-0a-XAK"/>
+                        <viewControllerLayoutGuide type="bottom" id="fQ0-wz-U9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yyG-N4-hfa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parabens voce logou como o pai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vce-JS-dqW">
+                                <rect key="frame" x="37" y="304" width="294" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XfB-fR-gqs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RQ-Iu-W33" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4314.3999999999996" y="-949.47526236881572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4gJ-ne-evf">
+            <objects>
+                <navigationController id="PUo-J4-iy2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lp6-yf-ul8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="86u-WE-4he" kind="relationship" relationship="rootViewController" id="SgU-Wj-TXm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPE-pX-Cla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3273" y="-948"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="Cb9-7N-YPf">
@@ -737,7 +781,9 @@
                     <connections>
                         <outlet property="backgroundImage" destination="wq6-ts-U1R" id="yyi-u9-Dq1"/>
                         <outlet property="loginButton" destination="kwt-Rx-ZMi" id="cgl-bj-1GN"/>
-                        <segue destination="cx9-OD-BGs" kind="show" identifier="EntrarSegue" id="MXj-fH-XXG"/>
+                        <outlet property="userField" destination="myq-lF-pXl" id="6n8-DD-JNs"/>
+                        <segue destination="cx9-OD-BGs" kind="show" identifier="loginFilha" id="MXj-fH-XXG"/>
+                        <segue destination="PUo-J4-iy2" kind="show" identifier="loginPai" id="uIr-j2-YT1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8A-vt-PLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -762,7 +808,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epS-K9-RbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2172" y="-752"/>
+            <point key="canvasLocation" x="-850" y="-947"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

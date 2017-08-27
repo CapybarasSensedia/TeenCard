@@ -13,7 +13,7 @@ class RegistroViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
     
-    var usuario: String = ""
+    @IBOutlet weak var userField: UITextField!
     
     // status bar with white text color
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -37,7 +37,12 @@ class RegistroViewController: UIViewController {
     
     
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
-        performSegue(withIdentifier: "EntrarFilha", sender: Any?.self)
+        
+        if(self.userField.text! == "clara@gmail.com") {
+            performSegue(withIdentifier: "loginFilha", sender: Any?.self)
+        } else if(self.userField.text! == "jose@gmail.com"){
+            performSegue(withIdentifier: "loginPai", sender: Any?.self)
+        }
     }
     
     /*
