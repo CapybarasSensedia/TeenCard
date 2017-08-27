@@ -19,6 +19,9 @@
         <array key="Montserrat-Bold.otf">
             <string>Montserrat-Bold</string>
         </array>
+        <array key="Montserrat-Light.otf">
+            <string>Montserrat-Light</string>
+        </array>
         <array key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
         </array>
@@ -41,7 +44,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RjX-Uu-JWf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1449" y="1530"/>
+            <point key="canvasLocation" x="-850" y="1681"/>
         </scene>
         <!--Extrato View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -212,42 +215,88 @@
                                 <color key="textColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdo-gV-Qkb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="este mês" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-oO-ky8">
+                                <rect key="frame" x="235" y="508" width="81" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="para ganhar pontos e subir" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6k-t3-CR6">
+                                <rect key="frame" x="100" y="535" width="236" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porquinho" translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-ge-aFq">
+                                <rect key="frame" x="35" y="508" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="56,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slL-QK-fbA" userLabel="Saldo">
+                                <rect key="frame" x="182" y="508" width="61" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" white="0.60190286240000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdD-DA-d8j">
+                                <rect key="frame" x="160" y="508" width="20" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <color key="textColor" white="0.59999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="de nível!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-qW-cva">
+                                <rect key="frame" x="100" y="562" width="236" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poupe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2D-y4-SLS">
+                                <rect key="frame" x="73" y="507" width="81" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9X0-Mo-G2g">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="669"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hlL-RX-Xd4">
-                                <rect key="frame" x="57" y="193" width="261" height="286"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZA-y9-fce">
+                                <rect key="frame" x="52" y="184" width="270" height="299"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDG-CP-NwC">
-                                        <rect key="frame" x="218" y="2" width="46" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrelas Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="ECU-Nr-pIT">
+                                        <rect key="frame" x="108" y="168" width="54" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Você está no nível júnior. Poupe mais dinheiro para ganhar pontos e subir de nível" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IWA-Kr-zhQ">
+                                        <rect key="frame" x="15" y="207" width="240" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="0.48150384426116943" blue="0.26206886768341064" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mc-3c-0BC">
+                                        <rect key="frame" x="239" y="6" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <state key="normal" title="x">
                                             <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="dismissLevelCard:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="7hB-hl-cq8"/>
+                                            <action selector="dismissLevelCard:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="ZFy-br-2T6"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrela Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="8qi-UO-qJO">
-                                        <rect key="frame" x="75" y="40" width="110" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrela Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-BV-2ki">
+                                        <rect key="frame" x="64" y="31" width="142" height="129"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estrelas Nivel" translatesAutoresizingMaskIntoConstraints="NO" id="npG-pv-J2z">
-                                        <rect key="frame" x="103" y="154" width="54" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Você está no nível júnior. Poupe mais dinheiro para ganhar pontos e subir de nível" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LMg-Kl-QsY">
-                                        <rect key="frame" x="39" y="176" width="183" height="66"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" red="1" green="0.49363434314727783" blue="0.25191175937652588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -256,15 +305,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Minha Conta" id="1HT-Km-ebd"/>
                     <connections>
-                        <outlet property="LevelCard" destination="hlL-RX-Xd4" id="ci0-0F-tJS"/>
-                        <outlet property="badgeLevel" destination="8qi-UO-qJO" id="kgv-Be-JIv"/>
-                        <outlet property="blurLayer" destination="kdo-gV-Qkb" id="bzN-Dj-N1z"/>
+                        <outlet property="LevelCard" destination="nZA-y9-fce" id="aEx-6w-g3W"/>
+                        <outlet property="badgeLevel" destination="Guf-BV-2ki" id="7qI-ML-GK5"/>
+                        <outlet property="blurLayer" destination="9X0-Mo-G2g" id="e8c-ph-CdM"/>
                         <outlet property="cardNumberLabel" destination="fg6-hv-oVH" id="PNW-qA-xjQ"/>
-                        <outlet property="levelInfo" destination="LMg-Kl-QsY" id="cTn-yD-3AZ"/>
+                        <outlet property="levelInfo" destination="IWA-Kr-zhQ" id="bnR-wW-z1w"/>
                         <outlet property="nameLabel" destination="laA-yC-aOD" id="OWo-0P-axr"/>
                         <outlet property="saldo" destination="HhR-va-cfp" id="X3n-OE-1SV"/>
                         <outlet property="saldoActivityIndicator" destination="D69-ZK-HEK" id="xeQ-qC-Zzj"/>
-                        <outlet property="starsLevel" destination="npG-pv-J2z" id="rlN-gn-2pP"/>
+                        <outlet property="starsLevel" destination="ECU-Nr-pIT" id="Fga-Ef-mpX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-vE-4B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
