@@ -8,10 +8,12 @@
 
 import UIKit
 
-class RegistroViewController: UIViewController {
+class RegistroViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
+    
+    @IBOutlet weak var userField: UITextField!
     
     // status bar with white text color
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -25,6 +27,8 @@ class RegistroViewController: UIViewController {
         loginButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
+        
+        self.userField.delegate = self;
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,9 +36,18 @@ class RegistroViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
-        performSegue(withIdentifier: "EntrarSegue", sender: Any?.self)
+        
+        if(self.userField.text! == "clara@gmail.com") {
+            performSegue(withIdentifier: "loginFilha", sender: Any?.self)
+        } else if(self.userField.text! == "jose@gmail.com"){
+            performSegue(withIdentifier: "loginPai", sender: Any?.self)
+        }
     }
     
     /*
