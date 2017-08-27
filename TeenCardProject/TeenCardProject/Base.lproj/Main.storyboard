@@ -568,9 +568,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.12171766489999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89r-Tb-kj4" userLabel="RecargaButton">
-                                <rect key="frame" x="60" y="550" width="270" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89r-Tb-kj4" userLabel="RecargaButton">
+                                <rect key="frame" x="52.5" y="550" width="270" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EuC-MT-M8k"/>
+                                    <constraint firstAttribute="width" constant="270" id="aLK-K6-p5P"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <state key="normal" title="Recarga" backgroundImage="BG">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -644,17 +647,6 @@
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjC-ns-GAD">
-                                        <rect key="frame" x="35" y="218" width="198" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                        <state key="normal" title="Finalizar" backgroundImage="BG">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="dismissRecargaCard:" destination="D0e-ee-UHe" eventType="touchUpInside" id="IrZ-7Z-KlZ"/>
-                                        </connections>
-                                    </button>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$ 00,00" textAlignment="center" minimumFontSize="17" background="BordaButtonBlue" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-17-BdF">
                                         <rect key="frame" x="35" y="128" width="200" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -662,17 +654,26 @@
                                         <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="next"/>
                                     </textField>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kch-B4-ci3" customClass="VisaCheckoutButton" customModule="TeenCardProject" customModuleProvider="target">
+                                        <rect key="frame" x="28" y="211" width="214" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zpa-6g-bXV" firstAttribute="top" secondItem="89r-Tb-kj4" secondAttribute="bottom" constant="18" id="myK-us-5UM"/>
+                            <constraint firstItem="89r-Tb-kj4" firstAttribute="centerX" secondItem="Ko3-eh-6sd" secondAttribute="centerX" id="oHQ-Vy-aT9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Conta" image="Minha Conta Icon" id="L8S-FU-P1Z"/>
                     <connections>
                         <outlet property="blurLayer" destination="XH8-Ty-Lbw" id="Sus-65-dv7"/>
                         <outlet property="cardNumberLabel" destination="IFu-6F-tOP" id="lJL-lN-0Tw"/>
-                        <outlet property="finalizarButton" destination="mjC-ns-GAD" id="C5W-Bo-hxV"/>
+                        <outlet property="checkoutButton" destination="Kch-B4-ci3" id="rcH-4A-jNx"/>
                         <outlet property="nameLabel" destination="vSy-Ix-T2Z" id="6vX-6K-Xf2"/>
                         <outlet property="recargaButton" destination="89r-Tb-kj4" id="J5f-E1-hqH"/>
                         <outlet property="recargaCard" destination="xgW-OC-w0Q" id="bMJ-du-GDF"/>
@@ -683,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZl-ST-ktK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3879" y="1021"/>
+            <point key="canvasLocation" x="-3879.1999999999998" y="1020.5397301349326"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="LFn-ZM-uyW">
@@ -1371,7 +1372,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L0e-De-0VR" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PZH-TE-jki">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PZH-TE-jki">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

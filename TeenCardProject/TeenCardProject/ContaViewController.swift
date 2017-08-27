@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import VisaCheckoutSDK
 
 class ContaViewController: UIViewController, UITextFieldDelegate {
-    
+    @IBOutlet var checkoutButton: VisaCheckoutButton!
 
     @IBOutlet var recargaButton: UIButton!
-    @IBOutlet var finalizarButton: UIButton!
+//    @IBOutlet var finalizarButton: UIButton!
     @IBOutlet var valorTextField: UITextField!
     @IBOutlet var blurLayer: UIImageView!
     @IBOutlet var recargaCard: UIView!
@@ -32,8 +33,8 @@ class ContaViewController: UIViewController, UITextFieldDelegate {
         self.recargaButton.layer.cornerRadius = 10
         
         self.recargaButton.clipsToBounds = true
-        self.finalizarButton.layer.cornerRadius = 10
-        self.finalizarButton.clipsToBounds = true
+        //self.finalizarButton.layer.cornerRadius = 10
+        //self.finalizarButton.clipsToBounds = true
         
         
         //Looks for single or multiple taps.
@@ -45,6 +46,14 @@ class ContaViewController: UIViewController, UITextFieldDelegate {
         view.addGestureRecognizer(tap)
         
         self.valorTextField.delegate = self
+        
+        checkoutButton.onCheckout(total: 1.5, currency: .brl)
+        { (resultado) in
+            if resultado != nil
+            {
+                print(resultado)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {
