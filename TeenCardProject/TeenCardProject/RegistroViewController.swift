@@ -35,7 +35,7 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
         
         view.addGestureRecognizer(tap)
         
-        self.userField.delegate = self;
+        self.userField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
