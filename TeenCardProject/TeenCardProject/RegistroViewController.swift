@@ -11,15 +11,13 @@ import UIKit
 class RegistroViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var backgroundImage: UIImageView!
     
-    
-    
+    // status bar with white text color
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
