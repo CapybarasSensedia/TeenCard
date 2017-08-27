@@ -47,8 +47,9 @@ class MeusCartoesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MeuCartaoCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MeuCartaoCell", for: indexPath) as! MeuCartaoTableViewCell
+        
+        cell.cardNumberLabel.text = GerenciadorDeCartoes.meusCartoes[indexPath.row].numeroDoCartao
         // Configure the cell...
 
         return cell
