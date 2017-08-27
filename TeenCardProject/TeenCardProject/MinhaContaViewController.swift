@@ -37,8 +37,12 @@ class MinhaContaViewController: UIViewController {
         self.recarregarButton.clipsToBounds = true
         
         //self.recarregarButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
-        self.carregaDados()
         
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.carregaDados()
     }
     func carregaDados()
     {
@@ -52,10 +56,12 @@ class MinhaContaViewController: UIViewController {
     
     func atualizaSaldo()
     {
+        self.saldo.isHidden = true
         self.saldoActivityIndicator.startAnimating()
         AgilitaOperacoesDeCredito.getSaldo
             { (saldo, erro) in
             self.saldoActivityIndicator.stopAnimating()
+            self.saldo.isHidden = false
             if let meuSaldo = saldo
             {
                 self.saldo.text = "\(meuSaldo)"

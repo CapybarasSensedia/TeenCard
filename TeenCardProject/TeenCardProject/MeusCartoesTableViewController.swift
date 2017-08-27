@@ -18,8 +18,6 @@ class MeusCartoesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         GerenciadorDeCartoes.getCartoesDoCliente()
-        GerenciadorDeCartoes.setCartaoAtual()
-
         
         let nib = UINib(nibName: "MeuCartaoCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "MeuCartaoCell")
@@ -54,7 +52,14 @@ class MeusCartoesTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MeuCartaoCell", for: indexPath) as! MeuCartaoTableViewCell
         
-        cell.cardNumberLabel.text = GerenciadorDeCartoes.meusCartoes[indexPath.row].numeroDoCartao
+        let numero = (GerenciadorDeCartoes.meusCartoes[indexPath.row].numeroDoCartao)
+            //meusCartoes[indexPath.row].numeroDoCartao)!
+        let last4 = numero.substring(from: numero.index(numero.endIndex, offsetBy: -4))
+        
+        cell.cardNumberLabel.text = "XXXX-XXXX-XXXX-" + last4
+        
+        cell.ownerNameLabel.text = GerenciadorDeCartoes.meusCartoes[indexPath.row].nomeCompleto
+        
         // Configure the cell...
 
         return cell
@@ -69,6 +74,7 @@ class MeusCartoesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        GerenciadorDeCartoes.setCartaoAtual(ordemCartao: indexPath.row)
         performSegue(withIdentifier: "MeuCartaoSegue", sender: Any?.self)
     }
     

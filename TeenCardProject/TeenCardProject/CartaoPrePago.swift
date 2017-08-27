@@ -15,13 +15,15 @@ class CartaoPrePago
     var numeroDoCartao: String
     var nomeCompleto: String
     var tipo: TipoDoCartao
+    var validade: String
     
-    init(proxy: String, numeroDoCartao: String, nomeCompleto: String, tipo: TipoDoCartao)
+    init(proxy: String, numeroDoCartao: String, nomeCompleto: String, tipo: TipoDoCartao, validade: String)
     {
         self.proxy = proxy
         self.nomeCompleto = nomeCompleto
         self.numeroDoCartao = numeroDoCartao
         self.tipo = tipo
+        self.validade = validade
     }
     
     enum TipoDoCartao {
