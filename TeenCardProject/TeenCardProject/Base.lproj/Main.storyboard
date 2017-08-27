@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -484,27 +483,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhu-wF-TRV">
-                                <rect key="frame" x="27" y="518" width="320" height="60"/>
-                                <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="9SG-ij-JLv"/>
-                                    <constraint firstAttribute="width" secondItem="Xhu-wF-TRV" secondAttribute="height" multiplier="16:3" id="Sba-xc-0qV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="Fazer Recarga" backgroundImage="Background">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="carregarButton:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="XNL-X5-gwq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Xhu-wF-TRV" firstAttribute="centerX" secondItem="n4f-7s-iSC" secondAttribute="centerX" id="6Ob-Gk-kCb"/>
-                            <constraint firstItem="HO9-kl-FDX" firstAttribute="top" secondItem="Xhu-wF-TRV" secondAttribute="bottom" constant="40" id="fif-gF-D7T"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Minha Conta" id="1HT-Km-ebd"/>
                     <connections>
@@ -513,7 +493,6 @@
                         <outlet property="badgeLevel" destination="Guf-BV-2ki" id="7qI-ML-GK5"/>
                         <outlet property="blurLayer" destination="9X0-Mo-G2g" id="e8c-ph-CdM"/>
                         <outlet property="cardNumberLabel" destination="fg6-hv-oVH" id="PNW-qA-xjQ"/>
-                        <outlet property="carregarButton" destination="Xhu-wF-TRV" id="uph-4j-Vrd"/>
                         <outlet property="denivel" destination="ae8-qW-cva" id="Qrd-3m-y4m"/>
                         <outlet property="levelInfo" destination="IWA-Kr-zhQ" id="bnR-wW-z1w"/>
                         <outlet property="nameLabel" destination="laA-yC-aOD" id="OWo-0P-axr"/>
@@ -587,16 +566,17 @@
                                 <rect key="frame" x="35" y="451" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhu-wF-TRV">
-                                <rect key="frame" x="28" y="544" width="320" height="60"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89r-Tb-kj4" userLabel="RecargaButton">
+                                <rect key="frame" x="60" y="550" width="270" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="Fazer Recarga" backgroundImage="BG">
+                                <state key="normal" title="Recarga" backgroundImage="BG">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="recargaAction:" destination="D0e-ee-UHe" eventType="touchUpInside" id="8va-Qa-tFK"/>
+                                    <action selector="dismissRecargaCard:" destination="D0e-ee-UHe" eventType="touchUpInside" id="gAL-RO-DNr"/>
+                                    <action selector="recargaAction:" destination="D0e-ee-UHe" eventType="touchUpInside" id="Pjp-ge-luQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-lg-kxD">
@@ -695,7 +675,7 @@
                         <outlet property="cardNumberLabel" destination="IFu-6F-tOP" id="lJL-lN-0Tw"/>
                         <outlet property="finalizarButton" destination="mjC-ns-GAD" id="C5W-Bo-hxV"/>
                         <outlet property="nameLabel" destination="vSy-Ix-T2Z" id="6vX-6K-Xf2"/>
-                        <outlet property="recargaButton" destination="Xhu-wF-TRV" id="CDi-Qu-Zfg"/>
+                        <outlet property="recargaButton" destination="89r-Tb-kj4" id="J5f-E1-hqH"/>
                         <outlet property="recargaCard" destination="xgW-OC-w0Q" id="bMJ-du-GDF"/>
                         <outlet property="saldo" destination="Ic4-qG-56K" id="MYz-L8-WJq"/>
                         <outlet property="saldoActivityIndicator" destination="0FR-A0-MnA" id="Kav-fb-Bpc"/>
@@ -704,7 +684,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZl-ST-ktK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3879.1999999999998" y="1443.3283358320841"/>
+            <point key="canvasLocation" x="-3879" y="1021"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="LFn-ZM-uyW">
@@ -920,21 +900,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sair do Aplicativo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDM-rP-cMC">
-                                                    <rect key="frame" x="16" y="-1" width="375" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="375" id="cYz-wC-d4T"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                                    <color key="textColor" red="0.47058823529999999" green="0.50980392159999999" blue="0.43137254899999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGL-5A-lhh">
+                                                    <rect key="frame" x="9" y="8" width="132" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Sair do Aplicativo"/>
+                                                    <connections>
+                                                        <segue destination="oOT-5x-s4k" kind="modal" id="nQq-ID-yUR"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="HDM-rP-cMC" firstAttribute="leading" secondItem="7Ae-Pp-nmy" secondAttribute="leading" constant="16" id="D63-1d-hpy"/>
-                                                <constraint firstItem="HDM-rP-cMC" firstAttribute="height" secondItem="7Ae-Pp-nmy" secondAttribute="height" id="QHj-MK-xhy"/>
-                                                <constraint firstItem="HDM-rP-cMC" firstAttribute="centerY" secondItem="7Ae-Pp-nmy" secondAttribute="centerY" id="hd7-gf-5QW"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -949,7 +923,15 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTi-sk-12G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2241" y="1681"/>
+            <point key="canvasLocation" x="2240.8000000000002" y="1680.8095952023989"/>
+        </scene>
+        <!--LoginID-->
+        <scene sceneID="kFw-Rp-D4L">
+            <objects>
+                <viewControllerPlaceholder referencedIdentifier="LoginID" id="oOT-5x-s4k" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6pd-f9-G9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2241" y="2113"/>
         </scene>
         <!--Meus Cartoes Table View Controller-->
         <scene sceneID="WeB-2O-SfW">
@@ -994,7 +976,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NJS-OJ-rK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3879" y="-949"/>
+            <point key="canvasLocation" x="-4273" y="-949"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RWN-k4-4uq">
@@ -1018,7 +1000,7 @@
         <!--Registro View Controller-->
         <scene sceneID="Cb9-7N-YPf">
             <objects>
-                <viewController id="igK-LL-pcI" customClass="RegistroViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginID" id="igK-LL-pcI" customClass="RegistroViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XBC-Pg-43S"/>
                         <viewControllerLayoutGuide type="bottom" id="cKZ-81-Ax9"/>
@@ -1409,6 +1391,7 @@
         <image name="Login Background" width="750" height="1334"/>
         <image name="Minha Conta Icon" width="25" height="22"/>
         <image name="Pattern" width="750" height="469"/>
+        <image name="Porquinho" width="56" height="49"/>
         <image name="Saldo atual" width="50" height="50"/>
         <image name="Senha Icon" width="38" height="51"/>
         <image name="Seu Nivel" width="181" height="54"/>

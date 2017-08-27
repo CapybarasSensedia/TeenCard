@@ -27,10 +27,6 @@ class MinhaContaViewController: UIViewController {
     @IBOutlet weak var poupancaTexto: UILabel!
     @IBOutlet weak var saldoRestante: UILabel!
     @IBOutlet weak var poupeImageView: UIImageView!
-    @IBAction func carregarButton(_ sender: Any)
-    {
-        
-    }
     
     @IBOutlet weak var carregarButton: UIButton!
     override func viewDidLoad() {
@@ -46,12 +42,8 @@ class MinhaContaViewController: UIViewController {
         
         //self.recarregarButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
         
-        if (GerenciadorDeCartoes.cartaoAtual?.tipo == CartaoPrePago.TipoDoCartao.TeenCardDependente)
-        {
-            self.carregarButton.isHidden = true
-        }
-        else
-        {
+       
+       
             self.poupeImageView.isHidden = true
             self.RSLabel.isHidden = true
             self.poupancaEsteMes.isHidden = true
@@ -60,7 +52,6 @@ class MinhaContaViewController: UIViewController {
             self.poupeImageView.isHidden = true
             self.poupe.isHidden = true
             self.denivel.isHidden = true
-        }
         
     }
     override func viewWillAppear(_ animated: Bool) {
