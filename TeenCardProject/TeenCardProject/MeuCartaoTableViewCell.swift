@@ -18,7 +18,7 @@ class MeuCartaoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.backgroundColor = UIColor.mainAppColor()
+        //self.backgroundColor = UIColor.mainAppColor()
         // Initialization code
     }
 
