@@ -10,17 +10,11 @@ import UIKit
 
 class MinhaContaViewController: UIViewController {
 
-    // status bar with white text color
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-
     @IBOutlet var levelInfo: UITextView!
     @IBOutlet var starsLevel: UIImageView!
     @IBOutlet var badgeLevel: UIImageView!
     @IBOutlet var blurLayer: UIImageView!
     @IBOutlet var LevelCard: UIView!
-    @IBOutlet var recarregarButton: UIButton!
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var cardNumberLabel: UILabel!
     @IBOutlet weak var saldo: UILabel!
@@ -36,8 +30,6 @@ class MinhaContaViewController: UIViewController {
         self.LevelCard.layer.cornerRadius = self.LevelCard.frame.width/16
     
         self.LevelCard.clipsToBounds = true
-        self.recarregarButton.layer.cornerRadius = 10
-        self.recarregarButton.clipsToBounds = true
         
         //self.recarregarButton.backgroundColor = UIColor.secondaryAppColor().withAlphaComponent(0.7)
         
