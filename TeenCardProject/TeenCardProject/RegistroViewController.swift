@@ -13,6 +13,8 @@ class RegistroViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var backgroundImage: UIImageView!
     
+    var usuario: String = ""
+    
     // status bar with white text color
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -33,8 +35,9 @@ class RegistroViewController: UIViewController {
     }
     
     
+    
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
-        performSegue(withIdentifier: "EntrarSegue", sender: Any?.self)
+        performSegue(withIdentifier: "EntrarFilha", sender: Any?.self)
     }
     
     /*

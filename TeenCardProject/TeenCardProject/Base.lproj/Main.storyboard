@@ -27,7 +27,6 @@
         <!--Linha Do Tempo View Controller-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
                 <viewController id="9pv-A4-QxB" customClass="LinhaDoTempoViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
@@ -46,8 +45,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="LNt-7S-Bxf"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1447.2" y="1529.6851574212894"/>
+            <point key="canvasLocation" x="-850" y="1681"/>
         </scene>
         <!--Extrato View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722.39999999999998" y="1529.6851574212894"/>
+            <point key="canvasLocation" x="-60" y="1681"/>
         </scene>
         <!--Transferencia View Controller-->
         <scene sceneID="kin-cY-JAN">
@@ -112,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6Y-pF-MOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2" y="1530"/>
+            <point key="canvasLocation" x="630" y="1681"/>
         </scene>
         <!--Minha Conta View Controller-->
         <scene sceneID="dCE-Lf-PH4">
@@ -229,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2L-vE-4B1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741.60000000000002" y="1529.6851574212894"/>
+            <point key="canvasLocation" x="1529" y="1681"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="LFn-ZM-uyW">
@@ -238,7 +238,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Wfh-Aq-Cfr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Dúvidas frequentes" id="xKL-A2-uN7">
@@ -247,7 +247,7 @@
                                         <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="71A-9O-5Ah" id="63Q-DT-Do6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internacional" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jce-m7-4wR">
@@ -255,8 +255,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="wjd-k9-ZSI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -279,9 +279,9 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="YYD-DF-MhH"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
@@ -303,8 +303,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="ARj-Ug-CZ8"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -327,8 +327,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="yQ1-dX-mGm"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -351,8 +351,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="QAJ-ti-y0x"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -375,8 +375,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="AWa-jE-6TW"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -403,8 +403,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="mol-sK-1me"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -427,8 +427,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="LHY-4D-cvz"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -451,8 +451,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="375" id="cYz-wC-d4T"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -475,7 +475,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rTi-sk-12G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="1530"/>
+            <point key="canvasLocation" x="2241" y="1681"/>
         </scene>
         <!--Meus Cartões-->
         <scene sceneID="WeB-2O-SfW">
@@ -499,7 +499,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UjQ-mK-5cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2" y="-750"/>
+            <point key="canvasLocation" x="921" y="-752"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="Cb9-7N-YPf">
@@ -589,13 +589,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8A-vt-PLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1448.8" y="-750.67466266866575"/>
+            <point key="canvasLocation" x="-2172" y="-1710"/>
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="SmM-uC-rgH">
             <objects>
                 <navigationController id="cx9-OD-BGs" customClass="CustomNavigationController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" id="Bee-kv-F3o">
+                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" misplaced="YES" id="Bee-kv-F3o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -609,7 +609,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="epS-K9-RbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722" y="-750"/>
+            <point key="canvasLocation" x="-2172" y="-752"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -632,7 +632,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="921" y="86"/>
         </scene>
         <!--Feed-->
         <scene sceneID="DUU-fe-G5O">
@@ -657,7 +657,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGy-2c-kaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1447.2" y="763.26836581709154"/>
+            <point key="canvasLocation" x="-850" y="851"/>
         </scene>
         <!--Extrato-->
         <scene sceneID="ZR1-8o-joW">
@@ -682,7 +682,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gal-EL-Z4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-722.39999999999998" y="760.56971514242889"/>
+            <point key="canvasLocation" x="-60" y="851"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="ff5-sg-3d7">
@@ -705,7 +705,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5F-fz-ADF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="763"/>
+            <point key="canvasLocation" x="2241" y="852"/>
         </scene>
         <!--Transferências-->
         <scene sceneID="FQI-hW-RmI">
@@ -730,7 +730,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obl-05-mwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="761"/>
+            <point key="canvasLocation" x="630" y="851"/>
         </scene>
         <!--Minha Conta-->
         <scene sceneID="PL0-fP-Ui4">
@@ -755,7 +755,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="piP-FW-VsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="761"/>
+            <point key="canvasLocation" x="1530" y="851"/>
         </scene>
     </scenes>
     <resources>
