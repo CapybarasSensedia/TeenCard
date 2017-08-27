@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinhaDoTempoViewController: UIViewController {
+class LinhaDoTempoViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
