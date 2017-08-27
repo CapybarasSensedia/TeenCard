@@ -73,8 +73,9 @@ class MeusCartoesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         GerenciadorDeCartoes.setCartaoAtual(ordemCartao: indexPath.row)
-        performSegue(withIdentifier: "MeuCartaoSegue", sender: Any?.self)
+        performSegue(withIdentifier: "MeuCartaoSegue", sender: nil)
     }
+    
     
     /*
     // Override to support conditional editing of the table view.
