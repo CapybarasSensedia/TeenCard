@@ -28,6 +28,14 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
         loginButton.layer.cornerRadius = 10
         loginButton.clipsToBounds = true
         
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
         self.userField.delegate = self;
     }
 
@@ -37,8 +45,13 @@ class RegistroViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        self.dismissKeyboard()
         return false
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func EntrarTouchUpInside(_ sender: Any) {
