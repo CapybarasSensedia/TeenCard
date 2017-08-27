@@ -22,7 +22,7 @@ class AgilitaOperacoesDeCredito
             {
                 
                 completionHandler(saldo?.saldo?.valor, nil)
-                print(saldo?.saldo?.valor)
+                print(saldo?.saldo?.valor ?? "")
             }
             else
             {
@@ -52,10 +52,10 @@ class AgilitaOperacoesDeCredito
                 
                 for operation in novoExtrato!
                 {
-                    print(operation.dataHora)
+                    print(operation.dataHora ?? "")
                     print(operation.estabelecimento)
-                    print(operation.tipo)
-                    print(operation.valor)
+                    print(operation.tipo ?? "")
+                    print(operation.valor ?? "")
                 }
             
                 
