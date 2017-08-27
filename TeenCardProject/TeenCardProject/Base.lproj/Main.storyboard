@@ -10,11 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="AvenirLTStd-Light.otf">
+            <string>AvenirLTStd-Light</string>
+        </array>
         <array key="AvenirLTStd-Roman.otf">
             <string>AvenirLTStd-Roman</string>
-        </array>
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
         </array>
         <array key="Montserrat-Bold.otf">
             <string>Montserrat-Bold</string>
@@ -24,6 +24,9 @@
         </array>
         <array key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-UltraLight.otf">
+            <string>Montserrat-UltraLight</string>
         </array>
     </customFonts>
     <scenes>
@@ -58,8 +61,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="extratoMockup" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-be-YVH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Extrato" translatesAutoresizingMaskIntoConstraints="NO" id="hg8-be-YVH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -69,7 +72,73 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-60" y="1681"/>
+            <point key="canvasLocation" x="-60" y="1680.8095952023989"/>
+        </scene>
+        <!--Valor Transferencia View Controller-->
+        <scene sceneID="LZw-do-K1n">
+            <objects>
+                <viewController id="tjr-17-fEX" customClass="ValorTransferenciaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="89b-jv-gLW"/>
+                        <viewControllerLayoutGuide type="bottom" id="iRv-Do-LWH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YUY-TK-zjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1Q-VX-BQR" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="5ux-kr-Fpo">
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="262"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Digite o Valor que deseja transferir" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjn-Il-WPH">
+                                        <rect key="frame" x="8" y="103" width="359" height="54"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirLTStd-Light" family="Avenir LT Std" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opm-Fi-ow4">
+                                        <rect key="frame" x="48" y="165" width="89" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="60"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="00,00" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-8D-H2k">
+                                        <rect key="frame" x="138" y="165" width="201" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-UltraLight" family="Montserrat" pointSize="60"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="next"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xW-ms-dvD">
+                                <rect key="frame" x="42" y="380" width="291" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Prossegir" backgroundImage="Background"/>
+                                <connections>
+                                    <segue destination="x7F-qt-5fD" kind="show" id="6Ia-V3-d8h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QKS-2a-22V"/>
+                    <connections>
+                        <outlet property="prosseguirButton" destination="5xW-ms-dvD" id="gii-Fm-IWB"/>
+                        <outlet property="valorTextField" destination="Lno-8D-H2k" id="n3Z-Dz-IAN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bdq-dw-Ox9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629.60000000000002" y="1680.8095952023989"/>
         </scene>
         <!--Transferencia View Controller-->
         <scene sceneID="kin-cY-JAN">
@@ -83,33 +152,147 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Transferências" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="e90-3f-KFH">
-                                <rect key="frame" x="69" y="312.5" width="237" height="42"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto 1" translatesAutoresizingMaskIntoConstraints="NO" id="Bmh-Oz-R1q">
+                                <rect key="frame" x="35" y="130" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="De Clara Carneiro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1s-hE-mS3">
+                                <rect key="frame" x="102" y="104" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.45695370435714722" blue="0.30448448657989502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by ThirdViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gFP-HY-h5O">
-                                <rect key="frame" x="87" y="362.5" width="200" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Borda" translatesAutoresizingMaskIntoConstraints="NO" id="DRd-PQ-yzi">
+                                <rect key="frame" x="102" y="130" width="257" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPy-Ov-4Rs">
+                                <rect key="frame" x="112" y="149" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10400 - 5608" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjL-4n-y8l">
+                                <rect key="frame" x="242" y="149" width="106" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Para" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pav-WW-hEt">
+                                <rect key="frame" x="102" y="212" width="257" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Borda" translatesAutoresizingMaskIntoConstraints="NO" id="JkH-pF-t6U">
+                                <rect key="frame" x="102" y="236" width="257" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-EM-H9v">
+                                <rect key="frame" x="109" y="251" width="246" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="findDestinatario:" destination="x7F-qt-5fD" eventType="touchUpInside" id="LU1-tj-qWV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uHp-i3-tOr" userLabel="Barrinha">
+                                <rect key="frame" x="111" y="259" width="1" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6e-aE-xeC" userLabel="Container">
+                                <rect key="frame" x="9" y="312" width="358" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-TJ-IHx" userLabel="Divider">
+                                        <rect key="frame" x="8" y="8" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.44038483499999997" blue="0.34059604999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto 2" translatesAutoresizingMaskIntoConstraints="NO" id="xc6-EB-H7b">
+                                        <rect key="frame" x="14" y="17" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filipe Samuel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6g-AV-ehd">
+                                        <rect key="frame" x="82" y="37" width="246" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nyp-eq-pat" userLabel="Divider">
+                                        <rect key="frame" x="7" y="82" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.44038483499999997" blue="0.34059604999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto 3" translatesAutoresizingMaskIntoConstraints="NO" id="AAG-rx-dcc">
+                                        <rect key="frame" x="14" y="89" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marcelo Dumont" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-ce-aU1">
+                                        <rect key="frame" x="82" y="109" width="245" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UsL-lf-qdb" userLabel="Divider">
+                                        <rect key="frame" x="7" y="155" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.44038483500480652" blue="0.34059605002403259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto 4" translatesAutoresizingMaskIntoConstraints="NO" id="4DX-ql-Ph9">
+                                        <rect key="frame" x="14" y="162" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ricardo dos Santos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-Na-C6e">
+                                        <rect key="frame" x="82" y="182" width="245" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WCE-8l-abb" userLabel="Divider">
+                                        <rect key="frame" x="8" y="225" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.44038483499999997" blue="0.34059604999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto 5" translatesAutoresizingMaskIntoConstraints="NO" id="cVe-nf-iXN">
+                                        <rect key="frame" x="14" y="231" width="60" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elvis Leminsky" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdr-YL-d5f">
+                                        <rect key="frame" x="76" y="246" width="246" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.45695370439999999" blue="0.30448448659999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZI-kE-OAq">
+                                        <rect key="frame" x="8" y="17" width="342" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="cQD-Z7-lve" kind="show" id="Z2O-Nm-WhP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gFP-HY-h5O" firstAttribute="centerX" secondItem="e90-3f-KFH" secondAttribute="centerX" id="6AZ-Yq-i4o"/>
-                            <constraint firstItem="gFP-HY-h5O" firstAttribute="top" secondItem="e90-3f-KFH" secondAttribute="bottom" constant="8" symbolic="YES" id="fQG-kC-voz"/>
-                            <constraint firstItem="e90-3f-KFH" firstAttribute="centerX" secondItem="sgp-51-qe7" secondAttribute="centerX" id="hi1-U3-cuj"/>
-                            <constraint firstItem="e90-3f-KFH" firstAttribute="centerY" secondItem="sgp-51-qe7" secondAttribute="centerY" id="iXf-Vv-aMs"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ndg-bS-GEq"/>
+                    <connections>
+                        <outlet property="barrinha" destination="uHp-i3-tOr" id="xrP-tJ-tdO"/>
+                        <outlet property="listaDeDestinatarios" destination="R6e-aE-xeC" id="qC4-Re-Sul"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6Y-pF-MOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="630" y="1681"/>
+            <point key="canvasLocation" x="629.60000000000002" y="2355.472263868066"/>
         </scene>
         <!--Minha Conta-->
         <scene sceneID="dCE-Lf-PH4">
@@ -274,7 +457,7 @@
                                         <rect key="frame" x="108" y="168" width="54" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Você está no nível júnior. Poupe mais dinheiro para ganhar pontos e subir de nível" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IWA-Kr-zhQ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Você está no nível júnior. Poupe mais dinheiro para ganhar pontos e subir de nível" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IWA-Kr-zhQ">
                                         <rect key="frame" x="15" y="207" width="240" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -320,10 +503,10 @@
             </objects>
             <point key="canvasLocation" x="1528.8" y="1680.8095952023989"/>
         </scene>
-        <!--Minha Conta View Controller-->
+        <!--Conta-->
         <scene sceneID="ENz-zb-CHd">
             <objects>
-                <viewController id="D0e-ee-UHe" customClass="MinhaContaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D0e-ee-UHe" customClass="ContaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wr2-GN-xoc"/>
                         <viewControllerLayoutGuide type="bottom" id="Zpa-6g-bXV"/>
@@ -336,7 +519,7 @@
                                 <rect key="frame" x="115" y="277" width="145" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
-                                <color key="textColor" red="0.96078431369999995" green="0.41176470590000003" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saldo Atual:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o99-ht-fzZ">
@@ -357,7 +540,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="252"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="bYi-yN-jWr">
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="bYi-yN-jWr">
                                         <rect key="frame" x="0.0" y="-1" width="375" height="262"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -381,9 +564,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                <state key="normal" title="Fazer Recarga" backgroundImage="Background">
+                                <state key="normal" title="Fazer Recarga" backgroundImage="BG">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recargaAction:" destination="D0e-ee-UHe" eventType="touchUpInside" id="8va-Qa-tFK"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Divider" translatesAutoresizingMaskIntoConstraints="NO" id="V1X-lg-kxD">
                                 <rect key="frame" x="16" y="319" width="343" height="35"/>
@@ -421,21 +607,76 @@
                                 <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XH8-Ty-Lbw">
+                                <rect key="frame" x="0.0" y="-1" width="375" height="669"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xgW-OC-w0Q">
+                                <rect key="frame" x="52" y="184" width="270" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-x5-Dqj">
+                                        <rect key="frame" x="239" y="6" width="22" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="x">
+                                            <color key="titleColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissLevelCard:" destination="uwM-Ri-CCW" eventType="touchUpInside" id="1QY-E1-wej"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Digite o valor que você deseja recarregar" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WaH-Qn-hFk">
+                                        <rect key="frame" x="15" y="36" width="240" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjC-ns-GAD">
+                                        <rect key="frame" x="35" y="218" width="198" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.43921568630000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                        <state key="normal" title="Finalizar" backgroundImage="BG">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissRecargaCard:" destination="D0e-ee-UHe" eventType="touchUpInside" id="IrZ-7Z-KlZ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="R$ 00,00" textAlignment="center" minimumFontSize="17" background="BordaButtonBlue" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Ta0-17-BdF">
+                                        <rect key="frame" x="35" y="128" width="200" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirLTStd-Roman" family="Avenir LT Std" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="next"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Conta" image="Minha Conta Icon" id="L8S-FU-P1Z"/>
                     <navigationItem key="navigationItem" id="9wv-Sa-0LU"/>
                     <connections>
+                        <outlet property="blurLayer" destination="XH8-Ty-Lbw" id="Sus-65-dv7"/>
                         <outlet property="cardNumberLabel" destination="IFu-6F-tOP" id="lJL-lN-0Tw"/>
+                        <outlet property="finalizarButton" destination="mjC-ns-GAD" id="C5W-Bo-hxV"/>
                         <outlet property="nameLabel" destination="vSy-Ix-T2Z" id="6vX-6K-Xf2"/>
-                        <outlet property="recarregarButton" destination="Xhu-wF-TRV" id="X8G-hC-EHQ"/>
+                        <outlet property="recargaButton" destination="Xhu-wF-TRV" id="CDi-Qu-Zfg"/>
+                        <outlet property="recargaCard" destination="xgW-OC-w0Q" id="bMJ-du-GDF"/>
                         <outlet property="saldo" destination="Ic4-qG-56K" id="MYz-L8-WJq"/>
                         <outlet property="saldoActivityIndicator" destination="0FR-A0-MnA" id="Kav-fb-Bpc"/>
+                        <outlet property="valorTextField" destination="Ta0-17-BdF" id="Eyu-RO-JyZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZl-ST-ktK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="2357"/>
+            <point key="canvasLocation" x="-3879.1999999999998" y="1443.3283358320841"/>
         </scene>
         <!--Configurações-->
         <scene sceneID="LFn-ZM-uyW">
@@ -444,8 +685,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Wfh-Aq-Cfr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="sectionIndexBackgroundColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Dúvidas frequentes" id="xKL-A2-uN7">
                                 <cells>
@@ -683,7 +923,7 @@
             </objects>
             <point key="canvasLocation" x="2241" y="1681"/>
         </scene>
-        <!--Meus Cartões-->
+        <!--Meus Cartoes Table View Controller-->
         <scene sceneID="WeB-2O-SfW">
             <objects>
                 <tableViewController id="MCf-VN-ma0" customClass="MeusCartoesTableViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -696,7 +936,7 @@
                             <outlet property="delegate" destination="MCf-VN-ma0" id="ap0-m8-lak"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Meus Cartões" id="Faa-vU-YXd"/>
+                    <navigationItem key="navigationItem" id="Faa-vU-YXd"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
@@ -707,49 +947,45 @@
             </objects>
             <point key="canvasLocation" x="921" y="-948"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aPv-J7-Gn5">
+        <!--Cartoes Pai Table View Controller-->
+        <scene sceneID="sa4-ZM-cO9">
             <objects>
-                <viewController id="86u-WE-4he" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Jlq-0a-XAK"/>
-                        <viewControllerLayoutGuide type="bottom" id="fQ0-wz-U9m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yyG-N4-hfa">
+                <tableViewController id="oqJ-gQ-cYc" customClass="CartoesPaiTableViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WSF-il-E0X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parabens voce logou como o pai" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vce-JS-dqW">
-                                <rect key="frame" x="37" y="304" width="294" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="XfB-fR-gqs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9RQ-Iu-W33" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4314.3999999999996" y="-949.47526236881572"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="4gJ-ne-evf">
-            <objects>
-                <navigationController id="PUo-J4-iy2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Lp6-yf-ul8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                        <connections>
+                            <outlet property="dataSource" destination="oqJ-gQ-cYc" id="FG2-f5-eDy"/>
+                            <outlet property="delegate" destination="oqJ-gQ-cYc" id="Van-w5-cJz"/>
+                        </connections>
+                    </tableView>
                     <connections>
-                        <segue destination="86u-WE-4he" kind="relationship" relationship="rootViewController" id="SgU-Wj-TXm"/>
+                        <segue destination="qFk-g6-NoL" kind="show" identifier="CartaoPaiSegue" id="oRD-ty-nUY"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CPE-pX-Cla" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJS-OJ-rK0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3273" y="-948"/>
+            <point key="canvasLocation" x="-3879" y="-949"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RWN-k4-4uq">
+            <objects>
+                <tabBarController id="qFk-g6-NoL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="mkr-bc-tgH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="selectedImageTintColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gcD-AZ-RFF" kind="relationship" relationship="viewControllers" id="Hte-Og-Oc4"/>
+                        <segue destination="D0e-ee-UHe" kind="relationship" relationship="viewControllers" id="s6B-SD-Zdk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dD4-C6-2OV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3879" y="49"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="Cb9-7N-YPf">
@@ -835,44 +1071,24 @@
                         <outlet property="backgroundImage" destination="wq6-ts-U1R" id="yyi-u9-Dq1"/>
                         <outlet property="loginButton" destination="kwt-Rx-ZMi" id="cgl-bj-1GN"/>
                         <outlet property="userField" destination="myq-lF-pXl" id="6n8-DD-JNs"/>
-                        <segue destination="cx9-OD-BGs" kind="show" identifier="loginFilha" id="MXj-fH-XXG"/>
-                        <segue destination="PUo-J4-iy2" kind="show" identifier="loginPai" id="uIr-j2-YT1"/>
+                        <segue destination="MCf-VN-ma0" kind="show" identifier="loginFilha" id="4vr-Nn-0d3"/>
+                        <segue destination="oqJ-gQ-cYc" kind="show" identifier="loginPai" id="l2O-z5-2kV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8A-vt-PLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2172" y="-1710"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="SmM-uC-rgH">
-            <objects>
-                <navigationController id="cx9-OD-BGs" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleAspectFill" misplaced="YES" id="Bee-kv-F3o">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="MCf-VN-ma0" kind="relationship" relationship="rootViewController" id="EZv-m0-wB5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="epS-K9-RbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-850" y="-947"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="selectedImageTintColor" red="0.97254901959999995" green="0.44705882349999998" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="gcD-AZ-RFF" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -889,7 +1105,7 @@
         <!--Feed-->
         <scene sceneID="DUU-fe-G5O">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gcD-AZ-RFF" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LinhaDoTempoID" automaticallyAdjustsScrollViewInsets="NO" id="gcD-AZ-RFF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Feed" image="Timeline Icon" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -977,18 +1193,18 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="x7F-qt-5fD" kind="relationship" relationship="rootViewController" id="gR3-sT-C3d"/>
+                        <segue destination="tjr-17-fEX" kind="relationship" relationship="rootViewController" id="Cj3-7h-JII"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Obl-05-mwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630" y="851"/>
         </scene>
-        <!--Minha Conta-->
+        <!--Conta-->
         <scene sceneID="PL0-fP-Ui4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aOg-c2-CzR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Minha Conta" image="Minha Conta Icon" id="Aet-dg-CgF"/>
+                    <tabBarItem key="tabBarItem" title="Conta" image="Minha Conta Icon" id="Aet-dg-CgF"/>
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
@@ -1009,14 +1225,157 @@
             </objects>
             <point key="canvasLocation" x="1530" y="851"/>
         </scene>
+        <!--Finalizar Transferecia View Controller-->
+        <scene sceneID="kDd-mz-wSo">
+            <objects>
+                <viewController id="cQD-Z7-lve" customClass="FinalizarTransfereciaViewController" customModule="TeenCardProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fwj-0J-Rik"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBH-jV-OSM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ffJ-yj-2mu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1PF-p3-W73" userLabel="Container">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="406"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pattern" translatesAutoresizingMaskIntoConstraints="NO" id="qGi-44-6zs">
+                                        <rect key="frame" x="0.0" y="-1" width="375" height="422"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Foto FIlipe" translatesAutoresizingMaskIntoConstraints="NO" id="aAW-18-F4A">
+                                        <rect key="frame" x="112" y="86" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filipe Samuel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N35-3I-dPM">
+                                        <rect key="frame" x="115" y="251" width="171" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="25"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10400 - 5608" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVL-Dn-zoe">
+                                        <rect key="frame" x="120" y="355" width="145" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="R$60,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1R-gm-oEn">
+                                        <rect key="frame" x="110" y="288" width="168" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="28"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="irá receber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFq-P3-IN5">
+                                        <rect key="frame" x="116" y="279" width="145" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirLTStd-Light" family="Avenir LT Std" pointSize="17"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="proveniente da conta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHv-md-ub9">
+                                        <rect key="frame" x="120" y="334" width="148" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="AvenirLTStd-Light" family="Avenir LT Std" pointSize="15"/>
+                                        <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNo-qg-WOD">
+                                <rect key="frame" x="199" y="505" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Finalizar" backgroundImage="Background">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fj8-6x-W7M" kind="presentation" id="fGD-jW-IRr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6S-Yv-kHo">
+                                <rect key="frame" x="16" y="505" width="160" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Cancelar" backgroundImage="BordaButtom">
+                                    <color key="titleColor" red="1" green="0.51366513967514038" blue="0.2553253173828125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="finalizarButton" destination="jNo-qg-WOD" id="Tqs-vx-v4b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0T9-yq-ocV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629.60000000000002" y="3046.3268365817094"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KEp-4c-J8L">
+            <objects>
+                <viewController id="Fj8-6x-W7M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vZD-9l-JiC"/>
+                        <viewControllerLayoutGuide type="bottom" id="FDA-ww-8JZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yPe-TU-xP2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Final" translatesAutoresizingMaskIntoConstraints="NO" id="5fY-OV-n7U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63A-lE-ADS">
+                                <rect key="frame" x="109" y="511" width="158" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="bry-tI-94C" kind="show" id="lAT-eZ-T7b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHM-oj-ElG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="629.60000000000002" y="3750.6746626686659"/>
+        </scene>
+        <!--TabBarID-->
+        <scene sceneID="0YG-RZ-uYw">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ToTabBar" referencedIdentifier="TabBarID" id="bry-tI-94C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0j-6h-AdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="4146"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="BG" width="1000" height="576"/>
         <image name="Background" width="320" height="60"/>
+        <image name="Borda" width="550" height="78"/>
+        <image name="BordaButtom" width="160" height="50"/>
+        <image name="BordaButtonBlue" width="200" height="40"/>
         <image name="Config" width="22" height="22"/>
         <image name="Divider" width="345" height="50"/>
         <image name="Estrela Nivel" width="263" height="220"/>
         <image name="Estrelas Nivel" width="121" height="32"/>
+        <image name="Extrato" width="750" height="1334"/>
         <image name="Extrato Icon" width="22" height="21"/>
+        <image name="Final" width="750" height="1334"/>
+        <image name="Foto 1" width="86" height="82"/>
+        <image name="Foto 2" width="86" height="85"/>
+        <image name="Foto 3" width="81" height="79"/>
+        <image name="Foto 4" width="84" height="83"/>
+        <image name="Foto 5" width="87" height="83"/>
+        <image name="Foto FIlipe" width="373" height="374"/>
         <image name="Foto de perfil" width="341" height="342"/>
         <image name="Login Background" width="750" height="1334"/>
         <image name="Minha Conta Icon" width="25" height="22"/>
@@ -1030,7 +1389,9 @@
         <image name="Transferància" width="25" height="22"/>
         <image name="Ultima Recarga" width="50" height="50"/>
         <image name="User Icon" width="50" height="50"/>
-        <image name="extratoMockup" width="786" height="1298"/>
         <image name="queromeuprepago" width="854" height="432"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Hte-Og-Oc4"/>
+    </inferredMetricsTieBreakers>
 </document>

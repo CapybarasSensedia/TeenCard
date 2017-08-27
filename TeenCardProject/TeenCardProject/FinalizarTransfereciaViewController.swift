@@ -1,35 +1,23 @@
 //
-//  TransferenciaViewController.swift
+//  FinalizarTransfereciaViewController.swift
 //  TeenCardProject
 //
-//  Created by Clara Carneiro on 8/26/17.
+//  Created by Clara Carneiro on 8/27/17.
 //  Copyright © 2017 Marcelo Martimiano Junior. All rights reserved.
 //
 
 import UIKit
 
-class TransferenciaViewController: UIViewController {
+class FinalizarTransfereciaViewController: UIViewController {
 
-    
-    @IBOutlet var barrinha: UIView!
-    @IBOutlet var listaDeDestinatarios: UIView!
-    
-    // status bar with white text color
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
+    @IBOutlet var finalizarButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.barrinha.isHidden = true
-        self.listaDeDestinatarios.isHidden = true
+        self.finalizarButton.layer.cornerRadius = self.finalizarButton.frame.width/16
+        self.finalizarButton.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func findDestinatario(_ sender: Any) {
-        self.barrinha.isHidden = false
-        self.listaDeDestinatarios.isHidden = false
-    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

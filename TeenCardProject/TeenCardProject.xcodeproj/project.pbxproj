@@ -15,7 +15,7 @@
 		9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD31F51BC6600290189 /* Assets.xcassets */; };
 		9C2E0AD71F51BC6600290189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */; };
 		9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */; };
-		9C7B12111F5265CE000FA0D5 /* MeuCartaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7B12101F5265CE000FA0D5 /* MeuCartaoCell.xib */; };
+		9C7B12111F5265CE000FA0D5 /* CartaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C7B12101F5265CE000FA0D5 /* CartaoCell.xib */; };
 		9CE2BB1B1F5299D300234940 /* TeenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2BB1A1F5299D300234940 /* TeenCard.swift */; };
 		A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */; };
 		A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */; };
@@ -26,9 +26,15 @@
 		A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E16D1F51F28B00C9764D /* ColorExtensions.swift */; };
 		A25FE1481F5280B100D5E831 /* LinhaDoTempoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25FE1471F5280B100D5E831 /* LinhaDoTempoCell.xib */; };
 		A25FE14A1F52816100D5E831 /* LinhaDoTempoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FE1491F52816100D5E831 /* LinhaDoTempoTableViewCell.swift */; };
+		A25FE14C1F52B2C300D5E831 /* ValorTransferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FE14B1F52B2C300D5E831 /* ValorTransferenciaViewController.swift */; };
+		A25FE14E1F52B41F00D5E831 /* FinalizarTransfereciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25FE14D1F52B41F00D5E831 /* FinalizarTransfereciaViewController.swift */; };
 		A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */; };
 		A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B91F52385100375C34 /* CartaoPrePago.swift */; };
 		A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */; };
+		A2C7820E1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C7820D1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift */; };
+		A2C782101F52D5F1007E9BA1 /* CartaoPaiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2C7820F1F52D5F1007E9BA1 /* CartaoPaiCell.xib */; };
+		A2C782141F52D68E007E9BA1 /* CartoesPaiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C782131F52D68E007E9BA1 /* CartoesPaiTableViewController.swift */; };
+		A2C782161F52DB15007E9BA1 /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C782151F52DB15007E9BA1 /* ContaViewController.swift */; };
 		B87A430CF0CAC8DC9E63315E /* Pods_TeenCardProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +51,7 @@
 		9C2E0AD61F51BC6600290189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C2E0AD81F51BC6600290189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeCartoes.swift; sourceTree = "<group>"; };
-		9C7B12101F5265CE000FA0D5 /* MeuCartaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeuCartaoCell.xib; sourceTree = "<group>"; };
+		9C7B12101F5265CE000FA0D5 /* CartaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartaoCell.xib; sourceTree = "<group>"; };
 		9CE2BB1A1F5299D300234940 /* TeenCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeenCard.swift; sourceTree = "<group>"; };
 		A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferenciaViewController.swift; sourceTree = "<group>"; };
 		A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaContaViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +62,15 @@
 		A223E16D1F51F28B00C9764D /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A25FE1471F5280B100D5E831 /* LinhaDoTempoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinhaDoTempoCell.xib; sourceTree = "<group>"; };
 		A25FE1491F52816100D5E831 /* LinhaDoTempoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinhaDoTempoTableViewCell.swift; sourceTree = "<group>"; };
+		A25FE14B1F52B2C300D5E831 /* ValorTransferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValorTransferenciaViewController.swift; sourceTree = "<group>"; };
+		A25FE14D1F52B41F00D5E831 /* FinalizarTransfereciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalizarTransfereciaViewController.swift; sourceTree = "<group>"; };
 		A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
 		A2A398B91F52385100375C34 /* CartaoPrePago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartaoPrePago.swift; sourceTree = "<group>"; };
 		A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCartaoTableViewCell.swift; sourceTree = "<group>"; };
+		A2C7820D1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartaoPaiTableViewCell.swift; sourceTree = "<group>"; };
+		A2C7820F1F52D5F1007E9BA1 /* CartaoPaiCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartaoPaiCell.xib; sourceTree = "<group>"; };
+		A2C782131F52D68E007E9BA1 /* CartoesPaiTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartoesPaiTableViewController.swift; sourceTree = "<group>"; };
+		A2C782151F52DB15007E9BA1 /* ContaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
 		B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenCardProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -128,13 +140,8 @@
 		A223E1621F51E7AB00C9764D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A223E15C1F51D9F600C9764D /* RegistroViewController.swift */,
-				9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */,
-				9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */,
-				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
-				A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */,
-				A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */,
-				A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */,
+				A2C782121F52D65E007E9BA1 /* Pai */,
+				A2C782111F52D648007E9BA1 /* Filho */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -155,11 +162,46 @@
 			isa = PBXGroup;
 			children = (
 				A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */,
-				9C7B12101F5265CE000FA0D5 /* MeuCartaoCell.xib */,
+				9C7B12101F5265CE000FA0D5 /* CartaoCell.xib */,
+				A2C7820D1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift */,
+				A2C7820F1F52D5F1007E9BA1 /* CartaoPaiCell.xib */,
 				A25FE1491F52816100D5E831 /* LinhaDoTempoTableViewCell.swift */,
 				A25FE1471F5280B100D5E831 /* LinhaDoTempoCell.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		A25FE14F1F52B42F00D5E831 /* Transferia */ = {
+			isa = PBXGroup;
+			children = (
+				A25FE14B1F52B2C300D5E831 /* ValorTransferenciaViewController.swift */,
+				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
+				A25FE14D1F52B41F00D5E831 /* FinalizarTransfereciaViewController.swift */,
+			);
+			name = Transferia;
+			sourceTree = "<group>";
+		};
+		A2C782111F52D648007E9BA1 /* Filho */ = {
+			isa = PBXGroup;
+			children = (
+				A223E15C1F51D9F600C9764D /* RegistroViewController.swift */,
+				9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */,
+				9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */,
+				A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */,
+				A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */,
+				A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */,
+				A25FE14F1F52B42F00D5E831 /* Transferia */,
+			);
+			name = Filho;
+			sourceTree = "<group>";
+		};
+		A2C782121F52D65E007E9BA1 /* Pai */ = {
+			isa = PBXGroup;
+			children = (
+				A2C782131F52D68E007E9BA1 /* CartoesPaiTableViewController.swift */,
+				A2C782151F52DB15007E9BA1 /* ContaViewController.swift */,
+			);
+			name = Pai;
 			sourceTree = "<group>";
 		};
 		C0D49AD6568A9EB23E0017D0 /* Pods */ = {
@@ -240,7 +282,8 @@
 				A223E1691F51F16E00C9764D /* Avenir LT Std in Resources */,
 				9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */,
 				9C2E0AD21F51BC6600290189 /* Main.storyboard in Resources */,
-				9C7B12111F5265CE000FA0D5 /* MeuCartaoCell.xib in Resources */,
+				A2C782101F52D5F1007E9BA1 /* CartaoPaiCell.xib in Resources */,
+				9C7B12111F5265CE000FA0D5 /* CartaoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,18 +344,23 @@
 			files = (
 				9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */,
 				9C2AE1161F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift in Sources */,
+				A2C7820E1F52D5B1007E9BA1 /* CartaoPaiTableViewCell.swift in Sources */,
 				A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */,
 				A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */,
+				A2C782161F52DB15007E9BA1 /* ContaViewController.swift in Sources */,
 				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
 				A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */,
 				9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */,
 				A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */,
 				A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */,
+				A25FE14C1F52B2C300D5E831 /* ValorTransferenciaViewController.swift in Sources */,
 				A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */,
 				9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */,
 				9CE2BB1B1F5299D300234940 /* TeenCard.swift in Sources */,
 				A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */,
+				A25FE14E1F52B41F00D5E831 /* FinalizarTransfereciaViewController.swift in Sources */,
 				A25FE14A1F52816100D5E831 /* LinhaDoTempoTableViewCell.swift in Sources */,
+				A2C782141F52D68E007E9BA1 /* CartoesPaiTableViewController.swift in Sources */,
 				A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
