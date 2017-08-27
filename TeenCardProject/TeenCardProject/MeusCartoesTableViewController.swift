@@ -47,15 +47,13 @@ class MeusCartoesTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MeuCartaoCell", for: indexPath) as! MeuCartaoTableViewCell
         
-        let numero = (GerenciadorDeCartoes.meusCartoes[indexPath.row].numeroDoCartao)
-            //meusCartoes[indexPath.row].numeroDoCartao)!
+        let cartao = GerenciadorDeCartoes.meusCartoes[indexPath.row]
+        let numero = (cartao.numeroDoCartao)
         let last4 = numero.substring(from: numero.index(numero.endIndex, offsetBy: -4))
         
         cell.cardNumberLabel.text = "XXXX-XXXX-XXXX-" + last4
-        
-        cell.ownerNameLabel.text = GerenciadorDeCartoes.meusCartoes[indexPath.row].nomeCompleto
-        
-        // Configure the cell...
+        cell.expDateLabel.text = cartao.validade
+        cell.ownerNameLabel.text = cartao.nomeCompleto
 
         return cell
     }
