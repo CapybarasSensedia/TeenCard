@@ -23,6 +23,8 @@
 		A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E16D1F51F28B00C9764D /* ColorExtensions.swift */; };
 		A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */; };
 		A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B91F52385100375C34 /* CartaoPrePago.swift */; };
+		A2A398BC1F523C2A00375C34 /* MeuCartaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */; };
+		A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		A223E16D1F51F28B00C9764D /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
 		A2A398B91F52385100375C34 /* CartaoPrePago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartaoPrePago.swift; sourceTree = "<group>"; };
+		A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeuCartaoCell.xib; sourceTree = "<group>"; };
+		A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCartaoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 		A223E1641F51E7D300C9764D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */,
+				A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 				A223E1691F51F16E00C9764D /* Avenir LT Std in Resources */,
 				9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */,
 				9C2E0AD21F51BC6600290189 /* Main.storyboard in Resources */,
+				A2A398BC1F523C2A00375C34 /* MeuCartaoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +222,7 @@
 				A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */,
 				9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */,
 				A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */,
+				A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
