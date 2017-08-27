@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C2AE1161F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2AE1151F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift */; };
+		9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */; };
+		9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */; };
+		9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */; };
+		9C2E0AD21F51BC6600290189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD01F51BC6600290189 /* Main.storyboard */; };
+		9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD31F51BC6600290189 /* Assets.xcassets */; };
+		9C2E0AD71F51BC6600290189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */; };
+		9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */; };
+		A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */; };
+		A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */; };
+		A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */; };
+		A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E15C1F51D9F600C9764D /* RegistroViewController.swift */; };
+		A223E1691F51F16E00C9764D /* Avenir LT Std in Resources */ = {isa = PBXBuildFile; fileRef = A223E1671F51F16E00C9764D /* Avenir LT Std */; };
+		A223E16A1F51F16E00C9764D /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = A223E1681F51F16E00C9764D /* Montserrat */; };
+		A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223E16D1F51F28B00C9764D /* ColorExtensions.swift */; };
+		A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */; };
+		A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398B91F52385100375C34 /* CartaoPrePago.swift */; };
+		B87A430CF0CAC8DC9E63315E /* Pods_TeenCardProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */; };
+		A2A398BC1F523C2A00375C34 /* MeuCartaoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */; };
+		A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */; };
+
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenCardProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject.release.xcconfig"; sourceTree = "<group>"; };
+		89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeenCardProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9C2AE1151F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgilitaOperacoesDeCredito.swift; sourceTree = "<group>"; };
+		9C2E0AC71F51BC6600290189 /* TeenCardProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeenCardProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinhaDoTempoViewController.swift; sourceTree = "<group>"; };
+		9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtratoViewController.swift; sourceTree = "<group>"; };
+		9C2E0AD11F51BC6600290189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C2E0AD31F51BC6600290189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C2E0AD61F51BC6600290189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C2E0AD81F51BC6600290189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeCartoes.swift; sourceTree = "<group>"; };
+		A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferenciaViewController.swift; sourceTree = "<group>"; };
+		A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinhaContaViewController.swift; sourceTree = "<group>"; };
+		A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguracoesViewController.swift; sourceTree = "<group>"; };
+		A223E15C1F51D9F600C9764D /* RegistroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		A223E1671F51F16E00C9764D /* Avenir LT Std */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Avenir LT Std"; sourceTree = "<group>"; };
+		A223E1681F51F16E00C9764D /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
+		A223E16D1F51F28B00C9764D /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusCartoesTableViewController.swift; sourceTree = "<group>"; };
+		A2A398B91F52385100375C34 /* CartaoPrePago.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartaoPrePago.swift; sourceTree = "<group>"; };
+		B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeenCardProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeuCartaoCell.xib; sourceTree = "<group>"; };
+		A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuCartaoTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C2E0AC41F51BC6600290189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87A430CF0CAC8DC9E63315E /* Pods_TeenCardProject.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C3F8CADA6E8E1A517EBC56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B55B45C14E7A58258CB24A6B /* Pods_TeenCardProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2648FB1A1F51F1DB005FB2C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A223E16D1F51F28B00C9764D /* ColorExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		9C2E0ABE1F51BC6600290189 = {
+			isa = PBXGroup;
+			children = (
+				9C2E0AC91F51BC6600290189 /* TeenCardProject */,
+				9C2E0AC81F51BC6600290189 /* Products */,
+				C0D49AD6568A9EB23E0017D0 /* Pods */,
+				24C3F8CADA6E8E1A517EBC56 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C2E0AC81F51BC6600290189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C2E0AC71F51BC6600290189 /* TeenCardProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C2E0AC91F51BC6600290189 /* TeenCardProject */ = {
+			isa = PBXGroup;
+			children = (
+				A223E1641F51E7D300C9764D /* View */,
+				A223E1631F51E7CA00C9764D /* Model */,
+				A223E1621F51E7AB00C9764D /* Controller */,
+				9C2E0ACA1F51BC6600290189 /* AppDelegate.swift */,
+				9C2E0AD01F51BC6600290189 /* Main.storyboard */,
+				A223E1671F51F16E00C9764D /* Avenir LT Std */,
+				A223E1681F51F16E00C9764D /* Montserrat */,
+				9C2E0AD31F51BC6600290189 /* Assets.xcassets */,
+				9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */,
+				9C2E0AD81F51BC6600290189 /* Info.plist */,
+			);
+			path = TeenCardProject;
+			sourceTree = "<group>";
+		};
+		A223E1621F51E7AB00C9764D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A223E15C1F51D9F600C9764D /* RegistroViewController.swift */,
+				9C2E0ACC1F51BC6600290189 /* LinhaDoTempoViewController.swift */,
+				9C2E0ACE1F51BC6600290189 /* ExtratoViewController.swift */,
+				A223E1561F51CFF500C9764D /* TransferenciaViewController.swift */,
+				A223E1581F51D00A00C9764D /* MinhaContaViewController.swift */,
+				A223E15A1F51D02400C9764D /* ConfiguracoesViewController.swift */,
+				A2A398B71F5234C900375C34 /* MeusCartoesTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A223E1631F51E7CA00C9764D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2648FB1A1F51F1DB005FB2C4 /* Extensions */,
+				9C2AE1151F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift */,
+				A2A398B91F52385100375C34 /* CartaoPrePago.swift */,
+				9C5994CF1F52290A008597C4 /* GerenciadorDeCartoes.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A223E1641F51E7D300C9764D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2A398BD1F523C7E00375C34 /* MeuCartaoTableViewCell.swift */,
+				A2A398BB1F523C2A00375C34 /* MeuCartaoCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C0D49AD6568A9EB23E0017D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */,
+				75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C2E0AC61F51BC6600290189 /* TeenCardProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C2E0ADB1F51BC6600290189 /* Build configuration list for PBXNativeTarget "TeenCardProject" */;
+			buildPhases = (
+				3255547BB91FB83DE7E16FF7 /* [CP] Check Pods Manifest.lock */,
+				9C2E0AC31F51BC6600290189 /* Sources */,
+				9C2E0AC41F51BC6600290189 /* Frameworks */,
+				9C2E0AC51F51BC6600290189 /* Resources */,
+				6CA98606980655899801A342 /* [CP] Embed Pods Frameworks */,
+				FBADDE404B82472700FD250A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TeenCardProject;
+			productName = TeenCardProject;
+			productReference = 9C2E0AC71F51BC6600290189 /* TeenCardProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C2E0ABF1F51BC6600290189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Marcelo Martimiano Junior";
+				TargetAttributes = {
+					9C2E0AC61F51BC6600290189 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = J5KQYDNX5E;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9C2E0AC21F51BC6600290189 /* Build configuration list for PBXProject "TeenCardProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C2E0ABE1F51BC6600290189;
+			productRefGroup = 9C2E0AC81F51BC6600290189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C2E0AC61F51BC6600290189 /* TeenCardProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C2E0AC51F51BC6600290189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A223E16A1F51F16E00C9764D /* Montserrat in Resources */,
+				9C2E0AD71F51BC6600290189 /* LaunchScreen.storyboard in Resources */,
+				A223E1691F51F16E00C9764D /* Avenir LT Std in Resources */,
+				9C2E0AD41F51BC6600290189 /* Assets.xcassets in Resources */,
+				9C2E0AD21F51BC6600290189 /* Main.storyboard in Resources */,
+				A2A398BC1F523C2A00375C34 /* MeuCartaoCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3255547BB91FB83DE7E16FF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CA98606980655899801A342 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBADDE404B82472700FD250A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TeenCardProject/Pods-TeenCardProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C2E0AC31F51BC6600290189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C2E0ACF1F51BC6600290189 /* ExtratoViewController.swift in Sources */,
+				9C2AE1161F523BF6008A1827 /* AgilitaOperacoesDeCredito.swift in Sources */,
+				A2A398BA1F52385100375C34 /* CartaoPrePago.swift in Sources */,
+				A223E16E1F51F28B00C9764D /* ColorExtensions.swift in Sources */,
+				9C2E0ACB1F51BC6600290189 /* AppDelegate.swift in Sources */,
+				A223E15B1F51D02400C9764D /* ConfiguracoesViewController.swift in Sources */,
+				9C5994D01F52290A008597C4 /* GerenciadorDeCartoes.swift in Sources */,
+				A223E1591F51D00A00C9764D /* MinhaContaViewController.swift in Sources */,
+				A223E1571F51CFF500C9764D /* TransferenciaViewController.swift in Sources */,
+				A223E15D1F51D9F600C9764D /* RegistroViewController.swift in Sources */,
+				9C2E0ACD1F51BC6600290189 /* LinhaDoTempoViewController.swift in Sources */,
+				A2A398B81F5234C900375C34 /* MeusCartoesTableViewController.swift in Sources */,
+				A2A398BE1F523C7E00375C34 /* MeuCartaoTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C2E0AD01F51BC6600290189 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C2E0AD11F51BC6600290189 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C2E0AD51F51BC6600290189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C2E0AD61F51BC6600290189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C2E0AD91F51BC6600290189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C2E0ADA1F51BC6600290189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C2E0ADC1F51BC6600290189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89B89E3D01DE7995BEC1633B /* Pods-TeenCardProject.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
+				INFOPLIST_FILE = TeenCardProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9C2E0ADD1F51BC6600290189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75870F8A6D906C680D1155E1 /* Pods-TeenCardProject.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J5KQYDNX5E;
+				INFOPLIST_FILE = TeenCardProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.org.eldorado.bepid.TeenCardProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C2E0AC21F51BC6600290189 /* Build configuration list for PBXProject "TeenCardProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2E0AD91F51BC6600290189 /* Debug */,
+				9C2E0ADA1F51BC6600290189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C2E0ADB1F51BC6600290189 /* Build configuration list for PBXNativeTarget "TeenCardProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2E0ADC1F51BC6600290189 /* Debug */,
+				9C2E0ADD1F51BC6600290189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C2E0ABF1F51BC6600290189 /* Project object */;
+}
